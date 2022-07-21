@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd9bc10d-41bd-4a8c-adce-fac06e6011dc" name="Changes" comment="this is commit after day3 Question 1">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoditasTraining_JavaCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CC5jAjTQK3UH7IJf6coFedQFxz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Types_of_operator_Assignment">
+    <configuration name="DataTypes_Addition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_2.DataTypes_Addition" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DriverClass_Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_2.DriverClass_Q1" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_1.HelloWorld" />
+      <module name="CoditasTraining_JavaCode" />
+      <option name="PROGRAM_PARAMETERS" value="10 5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Operators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_2.Operators" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Type_of_variablesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_2.Type_of_variablesDemo" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Types_of_operator_Assignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_2.Types_of_operator_Assignment" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Types_of_operator_Assignment" />
+        <item itemvalue="Application.DataTypes_Addition" />
+        <item itemvalue="Application.Operators" />
+        <item itemvalue="Application.DriverClass_Q1" />
+        <item itemvalue="Application.Type_of_variablesDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd9bc10d-41bd-4a8c-adce-fac06e6011dc" name="Changes" comment="" />
+      <created>1658293873793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658293873793</updated>
+    </task>
+    <task id="LOCAL-00001" summary="this is commit after day3 Question 1">
+      <created>1658398931267</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658398931267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="this is commit after day3 Question 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="this is commit after day3 Question 1" />
+  </component>
+</project>
