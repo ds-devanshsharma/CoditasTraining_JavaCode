@@ -1,7 +1,4 @@
 package coreJAVA.Week_1.Day_4;
-
-import java.sql.SQLOutput;
-
 class Pattern2_code{
     static char charactor;
     public static void patternMaker(){
@@ -19,7 +16,6 @@ class Pattern2_code{
                 counter--;
             }
             System.out.println();
-
         }
     }
 }
