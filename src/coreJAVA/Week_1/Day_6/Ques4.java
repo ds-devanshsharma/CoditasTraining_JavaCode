@@ -11,6 +11,7 @@ class Ques4Code{
                 if(arr[i].equals(arr[j])) {
                     System.out.println(arr[i]);
                     count++;
+                    arr[i]="";
                 }
             }
         }
@@ -18,16 +19,14 @@ class Ques4Code{
     static void duplicateInArrayRemover(String[] arr){
         String[] newString =new String[arr.length-count];
         int index=0;
-        for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                if(!(arr[i].equals(arr[j]))){
-                    newString[index]=arr[i];
-                }
-                index++;
+        for(String item: arr){
+            if(item.length()>0){
+                newString[index++]=item;
             }
         }
+
         for(String str : newString)
-            System.out.println(str+" ");
+            System.out.print(str+" ");
 }
 }
 public class Ques4 {
@@ -40,5 +39,8 @@ public class Ques4 {
         hi
          */
         Ques4Code.duplicateInArrayRemover(arr);
+        /*
+        Devansh hi Sharma
+         */
     }
 }

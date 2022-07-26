@@ -32,9 +32,9 @@ public class Ques1 {
 
         // Arrays.copyOf() this method is used to make a copy of given array
         int[] newArr =Arrays.copyOf(arr,arr.length);
-        System.out.println(Arrays.toString(newArr));
+        System.out.println("Copied Array is : "+Arrays.toString(newArr));
         /*
-            newArr=[100, 101, 102, 103, 105] same array as arr that we have copied
+            Copied  Array is : [100, 101, 102, 103, 105] same array as arr that we have copied
          */
         //there are many more Arrays method needed to explore
     }
