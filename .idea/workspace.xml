@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd9bc10d-41bd-4a8c-adce-fac06e6011dc" name="Changes" comment="this is commit on doing Pattern1">
+    <list default="true" id="bd9bc10d-41bd-4a8c-adce-fac06e6011dc" name="Changes" comment="this is commit on day 6">
+      <change afterPath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Encapsulation_Ques2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Ques1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Ques4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Ques6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +39,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;http.certificates&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Pattern2">
+  <component name="RunManager" selected="Application.Ques1">
+    <configuration name="Encapsulation_Ques2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Encapsulation_Ques2" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWorld" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_1.HelloWorld" />
       <module name="CoditasTraining_JavaCode" />
@@ -50,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Older_Younger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_4.Older_Younger" />
+    <configuration name="Ques1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques1" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_4.*" />
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pattern1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_4.Pattern1" />
+    <configuration name="Ques3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques3" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_4.*" />
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pattern2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_4.Pattern2" />
+    <configuration name="Ques4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques4" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_4.*" />
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,25 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintDate_TillToday" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_4.PrintDate_TillToday" />
+    <configuration name="Ques5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques5" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Question1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_4.Question1" />
-      <module name="CoditasTraining_JavaCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_4.*" />
+          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Pattern2" />
-        <item itemvalue="Application.Question1" />
-        <item itemvalue="Application.Pattern1" />
-        <item itemvalue="Application.Older_Younger" />
-        <item itemvalue="Application.PrintDate_TillToday" />
+        <item itemvalue="Application.Ques1" />
+        <item itemvalue="Application.Ques3" />
+        <item itemvalue="Application.Ques4" />
+        <item itemvalue="Application.Encapsulation_Ques2" />
+        <item itemvalue="Application.Ques5" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +190,49 @@
       <option name="project" value="LOCAL" />
       <updated>1658572955511</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="this is commit on doing Pattern2 with Approach1">
+      <created>1658642982501</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658642982501</updated>
+    </task>
+    <task id="LOCAL-00009" summary="this is commit on doing Pattern2 with Approach1">
+      <created>1658642998560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658642998560</updated>
+    </task>
+    <task id="LOCAL-00010" summary="this is commit on doing quetion 3.1">
+      <created>1658737479452</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658737479468</updated>
+    </task>
+    <task id="LOCAL-00011" summary="this is commit on doing">
+      <created>1658740317399</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658740317399</updated>
+    </task>
+    <task id="LOCAL-00012" summary="this is commit on da">
+      <created>1658826459245</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658826459245</updated>
+    </task>
+    <task id="LOCAL-00013" summary="this is commit on day 6">
+      <created>1658832889355</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658832889355</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +253,21 @@
     <MESSAGE value="this is commit after day4 Question 7.2" />
     <MESSAGE value="this is commit on last Age Question" />
     <MESSAGE value="this is commit on doing Pattern1" />
-    <option name="LAST_COMMIT_MESSAGE" value="this is commit on doing Pattern1" />
+    <MESSAGE value="this is commit on doing Pattern2 with Approach1" />
+    <MESSAGE value="this is commit on doing quetion 3.1" />
+    <MESSAGE value="this is commit on doing" />
+    <MESSAGE value="this is commit on day 5" />
+    <MESSAGE value="this is commit on day 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="this is commit on day 6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
