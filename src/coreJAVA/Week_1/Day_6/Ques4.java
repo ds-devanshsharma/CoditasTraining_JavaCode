@@ -28,11 +28,11 @@ class Ques4Code{
         }
         for(String str : newString)
             System.out.println(str+" ");
-    }
+}
 }
 public class Ques4 {
     public static void main(String[] args) {
-    String[] arr ={"hi","hi","Devansh","Sharma"};
+    String[] arr ={"hi","Devansh","hi","Sharma"};
         System.out.print("Repeated : ");
         Ques4Code.duplicateInArrayPrinter(arr);
         /*
