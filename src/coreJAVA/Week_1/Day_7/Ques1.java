@@ -27,25 +27,6 @@ class Employee{
                 "name : " + name +"\n";
     }
 }
-
-/**
-  3. Create Manager class extending Employee class with attributes as fixed salary(int) and
-  incentives(int) and method compute Salary() to calculate the salary of Manager .Print the salary
-  and details of Manager
- */
-class Manager extends Employee{
-    int fixedSalary;
-    int incentives;
-    Manager(int emp_id, String name,int fixedSalary,int incentives) {
-        super(emp_id, name);
-        this.fixedSalary = fixedSalary;
-        this.incentives = incentives;
-    }
-    public int computeSalary(){
-
-        return fixedSalary+incentives ;
-    }
-}
 class WageEmployee extends Employee{
     int hrs;
     int rate;
@@ -80,6 +61,24 @@ class SalesPerson extends WageEmployee{
     public int computeSalary(){
 
         return (hrs*rate)+commission ;
+    }
+}
+/**
+ 3. Create Manager class extending Employee class with attributes as fixed salary(int) and
+ incentives(int) and method compute Salary() to calculate the salary of Manager .Print the salary
+ and details of Manager
+ */
+class Manager extends Employee{
+    int fixedSalary;
+    int incentives;
+    Manager(int emp_id, String name,int fixedSalary,int incentives) {
+        super(emp_id, name);
+        this.fixedSalary = fixedSalary;
+        this.incentives = incentives;
+    }
+    public int computeSalary(){
+
+        return fixedSalary+incentives ;
     }
 }
 
