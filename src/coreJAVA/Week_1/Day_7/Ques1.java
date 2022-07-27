@@ -22,10 +22,9 @@ class Employee{
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "emp_id=" + emp_id +
-                ", name='" + name + '\'' +
-                '}';
+        return "Employee " +
+                "emp_id : " + emp_id +
+                ", name :" + name ;
     }
 }
 
