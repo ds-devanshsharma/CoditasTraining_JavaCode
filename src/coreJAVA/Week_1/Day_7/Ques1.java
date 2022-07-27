@@ -1,5 +1,6 @@
 package coreJAVA.Week_1.Day_7;
 
+import java.util.Arrays;
 import java.util.Scanner;
 /**
 1. Create class WageEmployee extending Employee class with attributes as hrs (int)and
@@ -17,6 +18,14 @@ class Employee{
     }
     void detailsPrinter(){
         System.out.println("Employee empID : "+ emp_id + "\nEmployee Name : "+name);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "emp_id=" + emp_id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
 
@@ -75,21 +84,12 @@ class SalesPerson extends WageEmployee{
     }
 }
 
-/**
- 4. Write a TestEmployee class to print the details of all types of employees (use array[ of
-    Employee class
- */
-class TestEmployee{
-    Employee[] employees =new Employee[3];
-
-}
-
 public class Ques1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your ID & name : ");
-        int id = scanner.nextInt();
-        String name = scanner.next();
+//        System.out.println("Enter your ID & name : ");
+//        int id = scanner.nextInt();
+//        String name = scanner.next();
 //        System.out.println("Enter your Timing & rate : ");
 //        int hrs =scanner.nextInt();
 //        int rate=scanner.nextInt();
@@ -112,11 +112,11 @@ public class Ques1 {
         Employee Name : Devansh
         Salary of Employee is : 13500
          */
-        System.out.println("HI manager!! Please Enter your fixedSalary & incentives : ");
-        int fixedSalary = scanner.nextInt();
-        int incentives = scanner.nextInt();
-        Manager manager = new Manager(id,name,fixedSalary,incentives);
-        System.out.println("Gross Salary of Employee is : "+manager.computeSalary());
+//        System.out.println("HI manager!! Please Enter your fixedSalary & incentives : ");
+//        int fixedSalary = scanner.nextInt();
+//        int incentives = scanner.nextInt();
+//        Manager manager = new Manager(id,name,fixedSalary,incentives);
+//        System.out.println("Gross Salary of Employee is : "+manager.computeSalary());
         /*
         Enter your ID & name :
         11056
@@ -126,5 +126,13 @@ public class Ques1 {
         250
         Gross Salary of Employee is : 45250
          */
+        Employee[] emp =new Employee[4];
+        emp[0]=new Employee(101,"Devansh");
+        emp[1]=new Employee(102,"Negi");
+        emp[2]=new Employee(103,"Baniya");
+        emp[3]=new Employee(104,"Manish");
+
+        //System.out.println(emp);
+        System.out.println(Arrays.toString(emp));
     }
 }
