@@ -24,7 +24,7 @@ class Employee{
     public String toString() {
         return "Employee " +
                 "emp_id : " + emp_id +
-                ", name :" + name ;
+                "name : " + name +"\n";
     }
 }
 
@@ -138,5 +138,12 @@ public class Ques1 {
         //System.out.println(emp);
 
         System.out.println(Arrays.toString(emp));
+        /*
+        [Employee emp_id : 101name : Devansh
+        , Employee emp_id : 102name : Negi
+        , Employee emp_id : 103name : Baniya
+        , Employee emp_id : 104name : Manish
+]
+         */
     }
 }
