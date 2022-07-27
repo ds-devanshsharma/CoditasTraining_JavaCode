@@ -125,6 +125,10 @@ public class Ques1 {
         250
         Gross Salary of Employee is : 45250
          */
+        /**
+         4. Write a TestEmployee class to print the details of all types of employees (use array[] of
+         Employee class)
+         */
         Employee[] emp =new Employee[4];
         emp[0]=new Employee(101,"Devansh");
         emp[1]=new Employee(102,"Negi");
@@ -132,6 +136,7 @@ public class Ques1 {
         emp[3]=new Employee(104,"Manish");
 
         //System.out.println(emp);
+
         System.out.println(Arrays.toString(emp));
     }
 }
