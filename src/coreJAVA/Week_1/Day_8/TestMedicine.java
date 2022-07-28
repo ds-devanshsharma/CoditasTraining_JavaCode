@@ -92,7 +92,7 @@ public class TestMedicine {
             medicineType.displayLabel();
     }
 }
-/*
+/* output
                     Company :: Johnson & Johnson
                     Address ::  America
                     Shake Syrup well before Use
