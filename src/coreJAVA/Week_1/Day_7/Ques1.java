@@ -16,15 +16,14 @@ class Employee{
         this.emp_id=emp_id;
         this.name=name;
     }
-    void detailsPrinter(){
-        System.out.println("Employee empID : "+ emp_id + "\nEmployee Name : "+name);
-    }
+//    void detailsPrinter(){
+//        System.out.println("Employee empID : "+ emp_id + "\nEmployee Name : "+name);
+//    }
 
     @Override
     public String toString() {
-        return "Employee " +
-                "emp_id : " + emp_id +
-                "name : " + name +"\n";
+        return "emp_id : " + emp_id +"\t"+
+                " name : " + name +"\n";
     }
 }
 class WageEmployee extends Employee{
@@ -34,7 +33,7 @@ class WageEmployee extends Employee{
         super(emp_id,name);
         this.rate=rate;
         this.hrs=hrs;
-        super.detailsPrinter();
+        //super.detailsPrinter();
 
     }
     public int computeSalary(){
@@ -130,9 +129,9 @@ public class Ques1 {
          */
         Employee[] emp =new Employee[4];
         emp[0]=new Employee(101,"Devansh");
-        emp[1]=new Employee(102,"Negi");
-        emp[2]=new Employee(103,"Baniya");
-        emp[3]=new Employee(104,"Manish");
+        emp[1]=new WageEmployee(102,"Negi",10,2000);
+        emp[2]=new Manager(1101,"Baniya",50000,17500);
+        emp[3]=new SalesPerson(10,5,12,800,051,"Manish");
 
         //System.out.println(emp);
 
