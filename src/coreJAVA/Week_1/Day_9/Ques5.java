@@ -32,7 +32,8 @@ public class Ques5 {
     }
 }
         /*
-        Sum 10
-        Sum 30
-
+        This is from Addition class : 25
+        This is from Addition class :25.5
+        Sum from VarArgClass : 10
+        Sum from VarArgClass : 30
          */
