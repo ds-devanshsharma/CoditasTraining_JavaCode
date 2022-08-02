@@ -31,3 +31,10 @@ public class Ques1 {
         System.out.println(second);
     }
 }
+/*
+This is  NO-argument Constructor from Base class :
+This is  parameterized Constructor from Base Class :
+This is parameterized from Derived Class
+FirstClass{id=101}
+
+ */
