@@ -18,7 +18,7 @@ public class StaticNestedClassDemo {
         Outer1 outer1 = new Outer1();
         outer1.outerShow();
         // calling innerShow
-        Outer1.Inner1 oInner1 = new Outer1.Inner1();
+       Outer1.Inner1 oInner1 = new Outer1.Inner1();
         oInner1.innerShow();
         // calling innerStaticShow
         Outer1.Inner1.innerStaticShow();
