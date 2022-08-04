@@ -1,6 +1,7 @@
 package coreJAVA.Week_1.Day_12;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 /**
@@ -35,25 +36,23 @@ public class Ques5 {
         int count=5;
         String  names[] = new String [count];
         takeInput(names);
-        System.out.println(Arrays.toString(names));
+        Arrays.sort(names, Comparator.comparingInt(String::length));
+        System.out.println("ascending Order : \n"+Arrays.toString(names));
         //taking oneByOne and checking vowel if there changing it
         int i=0;
         for(String name : names) {
             names[i++]=changeName(name);
 
         }
-        System.out.println(Arrays.toString(names));
+        System.out.println("After Changes : \n"+Arrays.toString(names));
 
 
     }
 }
 /*
-devansh
-manish
-arti
-zulfa
-sharma
-[devansh, manish, arti, zulfa, sharma]
-[dfvbnsh, mbnjsh, brtj, zvlfb, shbrmb]
-
+input ::
+ascending Order :
+[Negi, Sharma, Devansh, Shubham, UsmanBurkarti]
+After Changes :
+[Nfgj, Shbrmb, Dfvbnsh, Shvbhbm, UsmbnBvrkbrtj]
  */
