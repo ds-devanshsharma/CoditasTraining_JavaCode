@@ -4,7 +4,7 @@ package coreJAVA.Week_1.Day_12;
  */
 public class Ques3 {
     public static void main(String[] args) {
-        String str = "GeekForGeeks";
+        String str = "RepeatedCharactors";
         String ans = "";
         for(int i=0;i<str.length();i++){
           if(ans.indexOf(str.charAt(i))<0){
@@ -16,6 +16,6 @@ public class Ques3 {
     }
 }
 /*
-With spaces : GeekForGeeks
-Without spaces : GekFors
+With spaces : RepeatedCharactors
+Without spaces : RepatdChrcos
  */
