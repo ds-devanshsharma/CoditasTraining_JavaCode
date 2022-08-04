@@ -21,7 +21,7 @@ public class Ques7 {
             System.out.print(tokenizer.nextToken()+"  ");
         }
         System.out.println("\n : printing Separate operators  : ");
-        tokenizer = new StringTokenizer(statement,"320");
+        tokenizer = new StringTokenizer(statement,"[0123456789]");
         while(tokenizer.hasMoreElements()){
             System.out.print(tokenizer.nextToken()+"  ");
         }
