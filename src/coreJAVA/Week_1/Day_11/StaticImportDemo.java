@@ -17,3 +17,9 @@ public class StaticImportDemo {
 
     }
 }
+/*
+Square Root using Math.sqrt() :5.0
+Square Root using Direct sqrt() :5.0
+This message is printed without using System Keyword !!
+
+ */
