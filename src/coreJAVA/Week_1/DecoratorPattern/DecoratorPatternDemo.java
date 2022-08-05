@@ -14,7 +14,7 @@ class Rectangle implements  Shape{
         System.out.println("Shape :: Rectangle ");
     }
 }
- abstract class  ShapeDecorator implements Shape{
+abstract class  ShapeDecorator implements Shape{
     Shape decorateShape;
     public ShapeDecorator(Shape decorateShape){
         this.decorateShape = decorateShape;
