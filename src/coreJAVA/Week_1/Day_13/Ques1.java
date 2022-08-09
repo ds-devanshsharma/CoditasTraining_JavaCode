@@ -6,7 +6,9 @@ class Parent{
 
 }
 class Child extends Parent{
-
+    public void show(){
+        System.out.println("This from Child show() method :: ");
+    }
 }
 public class Ques1 {
     public static void main(String[] args) {
@@ -25,7 +27,8 @@ public class Ques1 {
         finally{
             //this finally block will run for sure in any condition
             Child c = (Child)p;
-            System.out.println("Do not DownCast Parent into Child !!");
+            c.show();
+            System.out.println("This message is from finally block Do not DownCast Parent into Child !!");
         }
     }
 }
@@ -39,6 +42,8 @@ java.lang.ClassCastException: class coreJAVA.Week_1.Day_13.Parent cannot be cast
 
 With TryCatch finally Block
 java.lang.ClassCastException: class coreJAVA.Week_1.Day_13.Parent cannot be cast to class coreJAVA.Week_1.Day_13.Child (coreJAVA.Week_1.Day_13.Parent and coreJAVA.Week_1.Day_13.Child are in unnamed module of loader 'app')
-Do not DownCast Parent into Child !!   ---- this is from finally block
+This from Child show() method ::
+This message is from finally block Do not DownCast Parent into Child !!
+
 
  */
