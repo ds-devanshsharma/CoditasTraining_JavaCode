@@ -9,15 +9,15 @@ import java.util.Arrays;
  */
 public class StringRotate {
     public static void rotate(char[] array ,int beginIndex , int endIndex){
-        int start = beginIndex;
-        int end = endIndex;
-        while(start < end){
-            char temp = array[start];
-            array[start] = array[end];
-            array[end] = temp;
-            start++;
-            end--;
-        }
+int start = beginIndex;
+int end = endIndex;
+while(start < end){
+    char temp = array[start];
+    array[start] = array[end];
+    array[end] = temp;
+    start++;
+    end--;
+}
     }
     public static void main(String[] args) {
         String inputString = "rotatemeplease";
