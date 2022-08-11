@@ -11,6 +11,7 @@ public class SpaceConflict {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your Name :: ");
          name = scanner.next();
+         scanner.nextLine();
         System.out.println("Enter your Id : ");
          id = scanner.nextInt();
         System.out.println("Enter marks : ");
