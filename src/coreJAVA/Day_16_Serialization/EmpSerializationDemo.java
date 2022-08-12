@@ -1,6 +1,5 @@
 package coreJAVA.Day_16_Serialization;
-
-import java.io.FileNotFoundException;
+// Serialization is
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;

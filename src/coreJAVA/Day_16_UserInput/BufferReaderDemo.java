@@ -10,7 +10,7 @@ class Data{
     String name;
     char grade;
      public void inputDetails() throws IOException {
-        //Class obj = new class(char input so Reader =>new InputStreamReader(console=>System.in));
+        //Class obj = new class(Charactor input so Reader =>new InputStreamReader(console=>System.in));
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter Name : ");
          name = bufferedReader.readLine();
