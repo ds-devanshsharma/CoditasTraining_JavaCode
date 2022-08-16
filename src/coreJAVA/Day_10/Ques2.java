@@ -52,7 +52,7 @@ public class Ques2 {
         Constructor[] consArray = c.getConstructors();
         System.out.println(Arrays.toString(consArray));
         System.out.println("----------------------------------------------");
-        //getting information
+        //getting information about Methods
         System.out.println("Methods of "+c.getSimpleName()+" are : ");
         Method[] methods = c.getMethods();
         System.out.println(Arrays.toString(methods));
@@ -62,7 +62,8 @@ public class Ques2 {
         Field[] fields1 = c.getFields();
         System.out.println("Fields of "+c.getSimpleName()+" are :\n ");
         //getField("FieldName") will give you only public Field that you have passed as parameter
-        System.out.println("Field of OrderClass using getField('StringName') : \n"+c.getField("orderType"));
+        System.out.println("Field of OrderClass using getField('StringName') : \n"
+                +c.getField("orderType"));
 
         //getDeclaredFields() will give you private ,public,protected all Fields of that class
         Field[] fields2 = c.getDeclaredFields();

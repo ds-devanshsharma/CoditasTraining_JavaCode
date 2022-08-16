@@ -14,10 +14,11 @@ public class Ques3 {
         Class c = Class.forName("coreJAVA.Day_10.PrivateReflection");
        Field field = c.getDeclaredField("id");
        field.setAccessible(true);
-       System.out.println("Value of "+c.getDeclaredField("id")+"private value : "+field.get(privateReflection));
-
+       System.out.println("Value of "+c.getDeclaredField("id")+" private value before changes: "+field.get(privateReflection));
+        field.set(privateReflection,15);
+        System.out.println("Value of "+c.getDeclaredField("id")+" private value After changes: "+field.get(privateReflection));
     }
 }
 /*
-Value of private int coreJAVA.Week_1.Day_10.PrivateReflection.idprivate value : 10
- */
+Value of private int coreJAVA.Day_10.PrivateReflection.id private value before changes: 10
+Value of private int coreJAVA.Day_10.PrivateReflection.id private value After changes: 15 */
