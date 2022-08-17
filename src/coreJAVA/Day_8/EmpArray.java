@@ -46,7 +46,7 @@ public class EmpArray {
         Employee e =null;
 
         for( int i=0 ;i<records;i++) {
-            new Employee();
+            e=new Employee();
             System.out.println("Enter your id : ");
             e.setId(scanner.nextInt());
             empArray[i]=e;
