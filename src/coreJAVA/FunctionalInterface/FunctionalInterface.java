@@ -20,7 +20,7 @@ public class FunctionalInterface {
                 return sum;
             }
         };
-        System.out.println("Addition of number : "+addition.add(10,100,1000));
+        System.out.println("ADDITION using Anonymous class : "+addition.add(10,100,1000));
     }
 
     // using lambda Expression
@@ -34,14 +34,21 @@ public class FunctionalInterface {
               return sum;
        };
 
-        System.out.println(addition.add(10,20));
+        System.out.println("ADDITION using lamdaExpression : " +addition.add(10,20));
     }
     void addStream(){
        Addition addition =(a)-> Arrays.stream(a).mapToInt(x->x).sum();
-        System.out.println(addition.add(10,20,30,40));
+        System.out.println("ADDITION using Streams : "+addition.add(10,20,30,40));
     }
 
     public static void main(String[] args) {
        new FunctionalInterface().addStream();
+       new FunctionalInterface().anonymousClassDemo();
+       new FunctionalInterface().lambdaExpressionDemo();
     }
 }
+/*
+ADDITION using Streams : 100
+ADDITION using Anonymous class : 1110
+ADDITION using lamdaExpression : 30
+ */
