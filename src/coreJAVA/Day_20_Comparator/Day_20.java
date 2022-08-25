@@ -1,4 +1,4 @@
-package coreJAVA.Day_20;
+package coreJAVA.Day_20_Comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;

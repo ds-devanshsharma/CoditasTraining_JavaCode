@@ -1,8 +1,8 @@
-package coreJAVA.Day_20;
+package coreJAVA.Day_20_Comparator;
 
 import java.util.*;
 
-import static coreJAVA.Day_20.EmployeeSystemDriver.count;
+import static coreJAVA.Day_20_Comparator.EmployeeSystemDriver.count;
 
 public class EmployeeSystemOperation  {
     static ArrayList<Employee> list = new ArrayList<>();

@@ -1,6 +1,4 @@
-package coreJAVA.Day_20;
-
-import static coreJAVA.Day_20.EmployeeSystemDriver.count;
+package coreJAVA.Day_20_Comparator;
 
 class Employee {
     int empID;
