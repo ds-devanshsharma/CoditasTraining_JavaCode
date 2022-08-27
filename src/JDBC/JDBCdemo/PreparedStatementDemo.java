@@ -18,11 +18,16 @@ class PreparedStatementcode{
             connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_database ",
                     "root","Coditas@123");
             //statement
+            //SELECT
             //preparedStatement = connection.prepareStatement("SELECT * FROM JAVA_PEEPS");
-            preparedStatement = connection.prepareStatement("Insert into JAVA_PEEPS values (?,?,?)");
+            //INSERT
+           // preparedStatement = connection.prepareStatement("Insert into JAVA_PEEPS values (?,?,?)");
+            //DELETE
+            preparedStatement = connection.prepareStatement("DELETE FROM JAVA_PEEPS WHERE I_ID = 11080 ");
             // taking input from USER
-            int flag =1;
-            scanner = new Scanner(System.in);
+//            int flag =1;
+//            scanner = new Scanner(System.in);
+
 //            while(flag == 1) {
 //                System.out.println("Enter 1 for add !! ");
 //                int choice =scanner.nextInt();
@@ -43,6 +48,8 @@ class PreparedStatementcode{
 //            //excuteUpdate
 //            check=preparedStatement.executeUpdate();
 //            if(check>0) System.out.println("Data Inserted  Succesfully !");
+            check =preparedStatement.executeUpdate();
+            if(check>0 ) System.out.println("DATA DELETED SUCCESSFULLY !!!");
             //executing Query
             preparedStatement = connection.prepareStatement("SELECT * FROM JAVA_PEEPS");
             resultSet =preparedStatement.executeQuery();
@@ -81,4 +88,11 @@ RECORD FETCHED FROM DATABASE !
 11057 ADITYA  PUNE
 11080 Banergi VimanNagar
 11070 Dubey Mumbai
+---------------------------------------------
+DATA DELETED SUCCESSFULLY !!!
+RECORD FETCHED FROM DATABASE !
+11067 ANUJ UK
+11057 ADITYA  PUNE
+11070 Dubey Mumbai
+---------------------------------------------
  */
