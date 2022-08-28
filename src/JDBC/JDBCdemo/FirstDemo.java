@@ -31,7 +31,7 @@ public class FirstDemo {
            // getting another resultSet to fetch data out from database executeQuery()
            ResultSet resultSet = statement.executeQuery("SELECT * FROM JAVA_PEEPS");
            while(resultSet.next()){
-               System.out.println(resultSet.getInt(1) +" " + resultSet.getString(2)+" "+resultSet.getString(3));
+                   System.out.println(resultSet.getInt(1) +" " + resultSet.getString(2)+" "+resultSet.getString(3));
            }
        }catch(Exception e){
            System.out.println(e.getMessage());
