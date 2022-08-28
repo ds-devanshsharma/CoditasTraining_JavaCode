@@ -3,7 +3,7 @@ package JDBC.JDBCdemo;
 import javax.management.Query;
 import java.sql.*;
 
-class CreateTable{
+class CreateTableCode{
     String url = "jdbc:mysql://localhost:3306/jdbc_database";
     String user= "root";
     String password= "Coditas@123";
@@ -33,9 +33,9 @@ class CreateTable{
         }
     }
 }
-public class CreatingTableCode {
+public class CreatingTable {
     public static void main(String[] args) {
-        new CreateTable().CreateTable();
+        new CreateTableCode().CreateTable();
     }
 }
 /*
