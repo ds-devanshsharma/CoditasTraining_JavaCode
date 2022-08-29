@@ -1,24 +1,26 @@
-package JDBC.JDBCdemo;
+package JDBC.Day1;
 
-import javax.management.Query;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
-class CreateTableCode{
+class DeleteTableCode{
     String url = "jdbc:mysql://localhost:3306/jdbc_database";
     String user= "root";
     String password= "Coditas@123";
     Connection connection ;
     PreparedStatement preparedStatement ;
     int check ;
-    void CreateTable(){
+    void deleteTable(){
 
         try
         {   // Driver
             Class.forName("com.mysql.jdbc.Driver");
             //connection
-           connection =  DriverManager.getConnection(url,user,password);
-           // statement
-            String query="CREATE TABLE FRIENDS2 (ID INT ,NAME VARCHAR(10),CITY VARCHAR(10),COMPANY VARCHAR(20)) ";
+            connection =  DriverManager.getConnection(url,user,password);
+            // statement
+            String query="DROP TABLE FRIENDS2 ";
             preparedStatement = connection.prepareStatement(query);
             // executingQuery
             /*
@@ -27,22 +29,26 @@ class CreateTableCode{
              */
             check = preparedStatement.executeUpdate();
 
-            if(check == 0) System.out.println("TABLE CREATED SUCCESSFULLY !!!");
+            if(check == 0) System.out.println("TABLE DELETED SUCCESSFULLY !!!");
         }catch (ClassNotFoundException | SQLException e) {
             System.out.println(e.getMessage());
+        }finally {
+            try {
+                connection.close();
+                preparedStatement.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
-public class CreatingTable {
+public class DeletingTable {
     public static void main(String[] args) {
-        new CreateTableCode().CreateTable();
+        new DeleteTableCode().deleteTable();
     }
 }
 /*
-friends2 TABLE CREATION
-------------------------
-TABLE CREATED SUCCESSFULLY !!!
-===============================================================================
-friends2 TABLE DELETION
-------------------------
+FRIENDS2 DELETION
+---------------------
+TABLE DELETED SUCCESSFULLY !!!
  */

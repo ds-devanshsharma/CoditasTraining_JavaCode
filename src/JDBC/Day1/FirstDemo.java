@@ -1,4 +1,4 @@
-package JDBC.JDBCdemo;
+package JDBC.Day1;
 
 import org.w3c.dom.ls.LSOutput;
 

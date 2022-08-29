@@ -1,26 +1,23 @@
-package JDBC.JDBCdemo;
+package JDBC.Day1;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
-class DeleteTableCode{
+class CreateTableCode{
     String url = "jdbc:mysql://localhost:3306/jdbc_database";
     String user= "root";
     String password= "Coditas@123";
     Connection connection ;
     PreparedStatement preparedStatement ;
     int check ;
-    void deleteTable(){
+    void CreateTable(){
 
         try
         {   // Driver
             Class.forName("com.mysql.jdbc.Driver");
             //connection
-            connection =  DriverManager.getConnection(url,user,password);
-            // statement
-            String query="DROP TABLE FRIENDS2 ";
+           connection =  DriverManager.getConnection(url,user,password);
+           // statement
+            String query="CREATE TABLE FRIENDS2 (ID INT ,NAME VARCHAR(10),CITY VARCHAR(10),COMPANY VARCHAR(20)) ";
             preparedStatement = connection.prepareStatement(query);
             // executingQuery
             /*
@@ -29,19 +26,22 @@ class DeleteTableCode{
              */
             check = preparedStatement.executeUpdate();
 
-            if(check == 0) System.out.println("TABLE DELETED SUCCESSFULLY !!!");
+            if(check == 0) System.out.println("TABLE CREATED SUCCESSFULLY !!!");
         }catch (ClassNotFoundException | SQLException e) {
             System.out.println(e.getMessage());
         }
     }
 }
-public class DeletingTable {
+public class CreatingTable {
     public static void main(String[] args) {
-        new DeleteTableCode().deleteTable();
+        new CreateTableCode().CreateTable();
     }
 }
 /*
-FRIENDS2 DELETION
----------------------
-TABLE DELETED SUCCESSFULLY !!!
+friends2 TABLE CREATION
+------------------------
+TABLE CREATED SUCCESSFULLY !!!
+===============================================================================
+friends2 TABLE DELETION
+------------------------
  */
