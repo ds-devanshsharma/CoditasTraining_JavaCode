@@ -21,6 +21,7 @@ public class RollbackDemo {
         printer(resultSet);
     }
     void rollback(Connection connection) throws SQLException, IOException {
+        System.out.println("WELCOME TO RECORD DELETION WIZARD !");
         preparedStatement = connection.prepareStatement("DELETE FROM TEACHER WHERE TID = ?",
                 ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
         System.out.println("Enter Teacher ID : ");
