@@ -8,7 +8,7 @@ import java.sql.*;
 public class RollbackDemo {
     BufferedReader reader ;
     static ResultSet resultSet;
-    Statement preparedStatement ;
+    PreparedStatement preparedStatement ;
     static void  printer(ResultSet resultSet) throws SQLException {
         while (resultSet.next()){
 
@@ -16,18 +16,20 @@ public class RollbackDemo {
         }
     }
     void showRollBackedData(Connection connection) throws SQLException {
-        preparedStatement = connection.createStatement();
-        resultSet =preparedStatement.executeQuery("SELECT * FROM TEACHER ");
+        preparedStatement = connection.prepareStatement("SELECT * FROM TEACHER ");
+        resultSet =preparedStatement.executeQuery();
         printer(resultSet);
     }
     void rollback(Connection connection) throws SQLException, IOException {
-        preparedStatement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
-//        System.out.println("Enter Teacher ID : ");
-//        reader =new BufferedReader(new InputStreamReader(System.in));
-//        preparedStatement.setInt(1,Integer.parseInt(reader.readLine()));
-        int check =preparedStatement.executeUpdate("DELETE FROM TEACHER WHERE TID = 111");
+        preparedStatement = connection.prepareStatement("DELETE FROM TEACHER WHERE TID = ?",
+                ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+        System.out.println("Enter Teacher ID : ");
+        reader =new BufferedReader(new InputStreamReader(System.in));
+        preparedStatement.setInt(1,Integer.parseInt(reader.readLine()));
+        int check =preparedStatement.executeUpdate();
         if(check !=0 ) System.out.println("DELETED SUCCESSFULLY ");
-//        preparedStatement= connection.prepareStatement("SELECT * FROM TEACHER ");
+        else System.out.println("DATA NOT FOUND!!");
+
         resultSet =preparedStatement.executeQuery("SELECT * FROM TEACHER ");
         //formatting
         ResultSetMetaData rmd = resultSet.getMetaData();

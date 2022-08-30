@@ -46,10 +46,12 @@ public class TransactionMain {
     }
 }
 /*
+Enter Teacher ID :
+109
 DELETED SUCCESSFULLY
                  TID                 NAME          DESIGNATION
                  101                AARTI              Trainer
-                 109                ANWAY                   SE
+                 111              ANIRUDH              MANAGER
                  199               Yuvraj             TEAMLEAD
 DO WANT TO ROLLBACK-1 OR COMMIT-0
 1
@@ -58,5 +60,4 @@ DATA ROLLBACKED !
                  109                ANWAY                   SE
                  111              ANIRUDH              MANAGER
                  199               Yuvraj             TEAMLEAD
-
  */
