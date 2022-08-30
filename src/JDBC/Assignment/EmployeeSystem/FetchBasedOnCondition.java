@@ -1,4 +1,4 @@
-package JDBC.Assignment;
+package JDBC.Assignment.EmployeeSystem;
 
 import java.io.BufferedReader;
 import java.io.IOException;

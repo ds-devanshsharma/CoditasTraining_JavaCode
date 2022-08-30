@@ -1,15 +1,15 @@
-package JDBC.Assignment;
+package JDBC.Assignment.EmployeeSystem;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import static JDBC.Assignment.FetchBasedOnCondition.connection;
+import static JDBC.Assignment.EmployeeSystem.FetchBasedOnCondition.connection;
 
 public class DeleteBasedOnCondition{
     PreparedStatement preparedStatement;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         try {
             // Driver
             Class.forName("com.mysql.cj.jdbc.Driver");

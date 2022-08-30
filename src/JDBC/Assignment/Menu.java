@@ -1,15 +1,17 @@
 package JDBC.Assignment;
 
+import JDBC.Assignment.EmployeeSystem.EmployeeSystem;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import static JDBC.Assignment.EmployeeSystem.preparedStatement;
-import static JDBC.Assignment.EmployeeSystem.reader;
+import static JDBC.Assignment.EmployeeSystem.EmployeeSystem.preparedStatement;
+import static JDBC.Assignment.EmployeeSystem.EmployeeSystem.reader;
 
 public class Menu {
-    void Menu(Connection connection) throws SQLException, IOException {
+    void Menu(Connection connection) throws Exception {
         System.out.println("Enter 1 for Adding DATA !\n" +
                             "Enter 2 for Showing DATA\n" +
                             "Enter 0 for Exit from MENU ");
@@ -40,7 +42,7 @@ public class Menu {
             while(condition!=0) {
                 new Menu().Menu(connection);
             }
-        }catch(ClassNotFoundException | SQLException |IOException e){
+        }catch(Exception e){
             System.out.println(e.getMessage());
         }
     }

@@ -1,4 +1,4 @@
-package JDBC.Assignment;
+package JDBC.Assignment.EmployeeSystem;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class EmployeeSystem {
     public static PreparedStatement preparedStatement =null;
     ResultSet resultSet = null;
-    static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    void showData(Connection connection) throws SQLException {
+    public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public void showData(Connection connection) throws Exception {
         preparedStatement = connection.prepareStatement("SELECT * FROM EMPLOYEE ");
         resultSet=preparedStatement.executeQuery();
         while(resultSet.next()){
@@ -23,7 +23,7 @@ public class EmployeeSystem {
 
     }
 
-    void addData(Connection connection) throws SQLException, IOException {
+    public void addData(Connection connection) throws SQLException, IOException {
         preparedStatement = connection.prepareStatement("Insert into employee values(?,?,?,?,?,?,?) ");
         int  choice =1;
         while(choice !=0){

@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd9bc10d-41bd-4a8c-adce-fac06e6011dc" name="Changes" comment="this is commit on day 6 ques 1">
-      <change afterPath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Encapsulation_Ques1.java" afterDir="false" />
+    <list default="true" id="bd9bc10d-41bd-4a8c-adce-fac06e6011dc" name="Changes" comment="Commit on &#10;EmployeeSystem Basic ALL CASES done">
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Assignment/ImageOperation/ImageOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Assignment/ImageOperation/InsertImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Assignment/StudentSystem/Cases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Assignment/StudentSystem/StudentSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Day3/ResultSetDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Day3/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Day3/Transaction/RollbackDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Day3/Transaction/TransactionMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBC/Day3/UpdateRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Ques4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coreJAVA/Week_1/Day_6/Ques4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Assignment/AlteringTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Assignment/EmployeeSystem/AlteringTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Assignment/DeleteBasedOnCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Assignment/EmployeeSystem/DeleteBasedOnCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Assignment/EmployeeSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Assignment/EmployeeSystem/EmployeeSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Assignment/FetchBasedOnCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Assignment/EmployeeSystem/FetchBasedOnCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Assignment/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Assignment/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/Assignment/UpdateBasedOnCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/Assignment/EmployeeSystem/UpdateBasedOnCondition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,18 +27,28 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CC5jAjTQK3UH7IJf6coFedQFxz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,36 +57,22 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.certificates&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/coditas/Downloads/mysql-connector-java-8.0.28.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Encapsulation_Ques1">
-    <configuration name="Encapsulation_Ques1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Encapsulation_Ques1" />
-      <module name="CoditasTraining_JavaCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Encapsulation_Ques2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Encapsulation_Ques2" />
-      <module name="CoditasTraining_JavaCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="coreJAVA.Day20" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TransactionMain">
     <configuration name="HelloWorld" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_1.HelloWorld" />
       <module name="CoditasTraining_JavaCode" />
@@ -78,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ques1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques1" />
+    <configuration name="ImageOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.Assignment.ImageOperation.ImageOperation" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
+          <option name="PATTERN" value="JDBC.Assignment.ImageOperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ques3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques3" />
+    <configuration name="JDBC.Assignment.Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.Assignment.Menu" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
+          <option name="PATTERN" value="JDBC.Assignment.EmployeeSystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ques4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJAVA.Week_1.Day_6.Ques4" />
+    <configuration name="JDBC.Day3.ResultSetDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.Day3.ResultSetDemo" />
       <module name="CoditasTraining_JavaCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="coreJAVA.Week_1.Day_6.*" />
+          <option name="PATTERN" value="JDBC.Day3.Transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,13 +126,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Ques2CLI" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coreJAVA.Day_16_UserInput.Ques2CLI" />
+      <module name="CoditasTraining_JavaCode" />
+      <option name="PROGRAM_PARAMETERS" value="101 Devansh 45000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreJAVA.Day_16_UserInput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.Assignment.StudentSystem.StudentSystem" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBC.Assignment.StudentSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC.Day3.Transaction.TransactionMain" />
+      <module name="CoditasTraining_JavaCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBC.Day3.Transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Ques2CLI" />
+      <item itemvalue="Application.HelloWorld" />
+      <item itemvalue="Application.JDBC.Day3.ResultSetDemo" />
+      <item itemvalue="Application.TransactionMain" />
+      <item itemvalue="Application.ImageOperation" />
+      <item itemvalue="Application.JDBC.Assignment.Menu" />
+      <item itemvalue="Application.StudentSystem" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Encapsulation_Ques1" />
-        <item itemvalue="Application.Ques1" />
-        <item itemvalue="Application.Ques3" />
-        <item itemvalue="Application.Ques4" />
-        <item itemvalue="Application.Encapsulation_Ques2" />
+        <item itemvalue="Application.TransactionMain" />
+        <item itemvalue="Application.JDBC.Day3.ResultSetDemo" />
+        <item itemvalue="Application.ImageOperation" />
+        <item itemvalue="Application.StudentSystem" />
+        <item itemvalue="Application.JDBC.Assignment.Menu" />
       </list>
     </recent_temporary>
   </component>
@@ -139,105 +197,350 @@
       <option name="presentableId" value="Default" />
       <updated>1658293873793</updated>
     </task>
-    <task id="LOCAL-00001" summary="this is commit after day3 Question 1">
-      <created>1658398931267</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00033" summary="Commit on Day 9 Assignment">
+      <created>1659088215760</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1658398931267</updated>
+      <updated>1659088215760</updated>
     </task>
-    <task id="LOCAL-00002" summary="this is commit after day3 Question 1">
-      <created>1658404342680</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00034" summary="Commit on Day 9 Assignment">
+      <created>1659096417773</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1658404342680</updated>
+      <updated>1659096417773</updated>
     </task>
-    <task id="LOCAL-00003" summary="this is commit after day4 switchDemo">
-      <created>1658466194060</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00035" summary="Commit on Day 10 Ques1 Assignment">
+      <created>1659430518934</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1658466194060</updated>
+      <updated>1659430518934</updated>
     </task>
-    <task id="LOCAL-00004" summary="this is commit after day4 ForEachDemo">
-      <created>1658468686854</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00036" summary="Commit on Day 10 Ques1 Assignment">
+      <created>1659466956571</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1658468686854</updated>
+      <updated>1659466956571</updated>
     </task>
-    <task id="LOCAL-00005" summary="this is commit after day4 ForEachDemo">
-      <created>1658479318301</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00037" summary="Commit on Day 10 DownCasting Demo">
+      <created>1659467410639</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1658479318301</updated>
+      <updated>1659467410639</updated>
     </task>
-    <task id="LOCAL-00006" summary="this is commit on last Age Question">
-      <created>1658481915416</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00038" summary="Commit on Nested classes || Annonymous class|| LocalInnerClass || MemberInnerClass">
+      <created>1659513700606</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
-      <updated>1658481915416</updated>
+      <updated>1659513700606</updated>
     </task>
-    <task id="LOCAL-00007" summary="this is commit on doing Pattern1">
-      <created>1658572955511</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00039" summary="Commit on Ques2 Reflection basics">
+      <created>1659526170153</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1658572955511</updated>
+      <updated>1659526170153</updated>
     </task>
-    <task id="LOCAL-00008" summary="this is commit on doing Pattern2 with Approach1">
-      <created>1658642982501</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00040" summary="Commit on  day12">
+      <created>1659611707015</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
-      <updated>1658642982501</updated>
+      <updated>1659611707015</updated>
     </task>
-    <task id="LOCAL-00009" summary="this is commit on doing Pattern2 with Approach1">
-      <created>1658642998560</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00041" summary="Commit on  day12 change in Ques 5">
+      <created>1659612150667</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
       <option name="project" value="LOCAL" />
-      <updated>1658642998560</updated>
+      <updated>1659612150667</updated>
     </task>
-    <task id="LOCAL-00010" summary="this is commit on doing quetion 3.1">
-      <created>1658737479452</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00042" summary="Commit on  day12 change in Ques 7">
+      <created>1659612252010</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1658737479468</updated>
+      <updated>1659612252010</updated>
     </task>
-    <task id="LOCAL-00011" summary="this is commit on doing">
-      <created>1658740317399</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00043" summary="Commit on  day12 change in Ques 3">
+      <created>1659613091545</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
-      <updated>1658740317399</updated>
+      <updated>1659613091545</updated>
     </task>
-    <task id="LOCAL-00012" summary="this is commit on da">
-      <created>1658826459245</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00044" summary="Commit on  day11 Ques static import done .">
+      <created>1659668175715</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1658826459245</updated>
+      <updated>1659668175715</updated>
     </task>
-    <task id="LOCAL-00013" summary="this is commit on day 6">
-      <created>1658832889355</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00045" summary="Commit on  day11 Ques static import done .">
+      <created>1659671090002</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
-      <updated>1658832889355</updated>
+      <updated>1659671090002</updated>
     </task>
-    <task id="LOCAL-00014" summary="this is commit on day 6 ques 1">
-      <created>1658837079608</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00046" summary="Commit on  day11 Ques static import done .">
+      <created>1659679383351</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1658837079608</updated>
+      <updated>1659679383351</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00047" summary="Commit on  day13 Wrapper Class">
+      <created>1659935199368</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1659935199368</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Commit on  day13 Ques1 Ques2">
+      <created>1659953350294</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1659953350294</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Commit on  day13 Ques1 Ques2 Ques 3">
+      <created>1659954134534</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1659954134534</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Commit on  day13 AssertStatement">
+      <created>1659955930966</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1659955930966</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Commit on  day13 changes is CCException">
+      <created>1660010423478</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1660010423478</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Commit on making changes in package name &quot;coreJAVA.week1&quot; to &quot;coreJAVA&quot;">
+      <created>1660011727921</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1660011727921</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Commit on making bankApplication Using Exception Handling">
+      <created>1660039119906</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1660039119906</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Commit on tryCatch 1">
+      <created>1660109393907</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1660109393907</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Commit on tryCatch 2">
+      <created>1660109702814</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1660109702814</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Commit on Scanner class next() InputMisMatchException">
+      <created>1660200553087</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1660200553087</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Commit on Scanner class next() InputMisMatchException clear buffer using nextLine() or we can use nextLine()">
+      <created>1660200672574</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1660200672574</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Commit on Scanner class &#10;nextInt() -&gt; nextLine() issue">
+      <created>1660211994367</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1660211994367</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Commit on RandomAccessFile practice">
+      <created>1660292487809</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1660292487809</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Commit on Reflection class private field changement || We can change private fields outside of that class">
+      <created>1660669494049</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1660669494049</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Commit on pattern2">
+      <created>1660756361598</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1660756361598</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Commit on EmpArray sort based on id">
+      <created>1660758833552</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1660758833552</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Commit on Employee-System">
+      <created>1661242868271</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1661242868271</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Commit on functional interface">
+      <created>1661449902150</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1661449902150</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Commit on functional interface">
+      <created>1661450092266</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1661450092266</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Commit on JDBC statement">
+      <created>1661503322240</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1661503322240</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Commit on JDBC statement CRUD operation">
+      <created>1661505275553</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1661505275553</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Commit on JDBC PreparedStatement&#10; SELECT  operation">
+      <created>1661507168734</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1661507168734</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Commit on JDBC PreparedStatement&#10; Insert  operation">
+      <created>1661511911511</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1661511911511</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Commit on JDBC PreparedStatement&#10; Insert  operation">
+      <created>1661588766289</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1661588766289</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Commit on JDBC PreparedStatement&#10; delete  operation">
+      <created>1661589282196</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1661589282196</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Commit on JDBC PreparedStatement&#10; delete on userInput operation">
+      <created>1661590298090</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1661590298090</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Commit on JDBC PreparedStatement&#10;  on userInput Updation operation">
+      <created>1661592154370</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1661592154370</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Commit on FridayTest practice EmployeeSystem with stream">
+      <created>1661601038224</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1661601038224</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Commit on FridayTest practice EmployeeSystem with stream">
+      <created>1661601194059</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1661601194059</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Commit on &#10;CREATING TABLE USING JDBC">
+      <created>1661715858162</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1661715858162</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Commit on &#10;DELETING TABLE USING JDBC">
+      <created>1661716159425</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1661716159425</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Commit on &#10;addBatch()&#10; JDBC">
+      <created>1661763789661</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1661763789661</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Commit on &#10;Employee CASE 1 | case 2">
+      <created>1661795037393</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1661795037393</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Commit on &#10;Employee CASE 3&#10;Column added">
+      <created>1661795960556</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1661795960556</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Commit on &#10;EmployeeSystem Basic ALL CASES done">
+      <created>1661799167093</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1661799167093</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,19 +555,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="this is commit after day3 Question 1" />
-    <MESSAGE value="this is commit after day4 switchDemo" />
-    <MESSAGE value="this is commit after day4 ForEachDemo" />
-    <MESSAGE value="this is commit after day4 Question 7.2" />
-    <MESSAGE value="this is commit on last Age Question" />
-    <MESSAGE value="this is commit on doing Pattern1" />
-    <MESSAGE value="this is commit on doing Pattern2 with Approach1" />
-    <MESSAGE value="this is commit on doing quetion 3.1" />
-    <MESSAGE value="this is commit on doing" />
-    <MESSAGE value="this is commit on day 5" />
-    <MESSAGE value="this is commit on day 6" />
-    <MESSAGE value="this is commit on day 6 ques 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="this is commit on day 6 ques 1" />
+    <MESSAGE value="Commit on tryCatch 1" />
+    <MESSAGE value="Commit on tryCatch 2" />
+    <MESSAGE value="Commit on Scanner class next() InputMisMatchException" />
+    <MESSAGE value="Commit on Scanner class next() InputMisMatchException clear buffer using nextLine() or we can use nextLine()" />
+    <MESSAGE value="Commit on Scanner class &#10;nextInt() -&gt; nextLine() issue" />
+    <MESSAGE value="Commit on RandomAccessFile practice" />
+    <MESSAGE value="Commit on Reflection class private field changement || We can change private fields outside of that class" />
+    <MESSAGE value="Commit on pattern2" />
+    <MESSAGE value="Commit on EmpArray sort based on id" />
+    <MESSAGE value="Commit on Employee-System" />
+    <MESSAGE value="Commit on functional interface" />
+    <MESSAGE value="Commit on JDBC statement" />
+    <MESSAGE value="Commit on JDBC statement CRUD operation" />
+    <MESSAGE value="Commit on JDBC PreparedStatement&#10; SELECT  operation" />
+    <MESSAGE value="Commit on JDBC PreparedStatement&#10; Insert  operation" />
+    <MESSAGE value="Commit on JDBC PreparedStatement&#10; delete  operation" />
+    <MESSAGE value="Commit on JDBC PreparedStatement&#10; delete on userInput operation" />
+    <MESSAGE value="Commit on JDBC PreparedStatement&#10;  on userInput Updation operation" />
+    <MESSAGE value="Commit on FridayTest practice EmployeeSystem with stream" />
+    <MESSAGE value="Commit on &#10;CREATING TABLE USING JDBC" />
+    <MESSAGE value="Commit on &#10;DELETING TABLE USING JDBC" />
+    <MESSAGE value="Commit on &#10;addBatch()&#10; JDBC" />
+    <MESSAGE value="Commit on &#10;Employee CASE 1 | case 2" />
+    <MESSAGE value="Commit on &#10;Employee CASE 3&#10;Column added" />
+    <MESSAGE value="Commit on &#10;EmployeeSystem Basic ALL CASES done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit on &#10;EmployeeSystem Basic ALL CASES done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

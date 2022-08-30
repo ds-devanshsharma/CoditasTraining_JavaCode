@@ -1,12 +1,11 @@
-package JDBC.Assignment;
+package JDBC.Assignment.EmployeeSystem;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import static JDBC.Assignment.FetchBasedOnCondition.connection;
+import static JDBC.Assignment.EmployeeSystem.FetchBasedOnCondition.connection;
 
 public class UpdateBasedOnCondition {
     PreparedStatement preparedStatement;
