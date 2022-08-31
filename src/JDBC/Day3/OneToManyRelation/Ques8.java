@@ -22,6 +22,7 @@ public class Ques8 {
                     "root","Coditas@123");
             //statement
             statement =connection.createStatement();
+
             resultSet =statement.executeQuery("SELECT TEACHER.NAME,STUDENT.NAME FROM STUDENT JOIN TEACHER " +
                     "ON TEACHER.TID = STUDENT.TID; ");
             if(resultSet.next()) System.out.println("RECORD FETCHED FROM DB :\n" +

@@ -9,11 +9,13 @@ import java.sql.SQLException;
 
 public class InsertImg {
     PreparedStatement preparedStatement;
-    void addingImage(Connection connection) throws SQLException, IOException {
+    void addingImage(Connection connection) throws SQLException ,IOException {
         //file
-        FileInputStream fileInputStream =new  FileInputStream("C:\\Users\\coditas\\Pictures\\Screenshots\\IMG.png");
+
+
+        FileInputStream fileInputStream =new  FileInputStream("C:\\Users\\coditas\\Downloads\\IMG.jpg");
         preparedStatement = connection.prepareStatement("INSERT INTO GALLERY VALUES(?,?)");
-        preparedStatement.setInt(1,1);
+        preparedStatement.setInt(1,2);
         preparedStatement.setBlob(2,fileInputStream);
         //executing statement
        int check = preparedStatement.executeUpdate();

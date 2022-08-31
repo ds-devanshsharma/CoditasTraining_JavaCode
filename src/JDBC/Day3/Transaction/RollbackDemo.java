@@ -9,7 +9,7 @@ public class RollbackDemo {
     BufferedReader reader ;
     static ResultSet resultSet;
     PreparedStatement preparedStatement ;
-    static void  printer(ResultSet resultSet) throws SQLException {
+    public static void  printer(ResultSet resultSet) throws SQLException {
         while (resultSet.next()){
 
             System.out.format("%20d %20s %20s\n",resultSet.getInt(1),resultSet.getString(2),resultSet.getString(3));

@@ -13,9 +13,16 @@ public class ImageOperation {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/JDBC_DATABASE","root","Coditas@123");
-            new InsertImg().addingImage(connection);
-        }catch(ClassNotFoundException | SQLException  | IOException e){
+//            // this method is adding IMG ==> DB
+//            new InsertImg().addingImage(connection);
+            // this method retrieve  DB ==> IMG
+            new RetrieveIMG().retrieveImg(connection);
+        }catch(ClassNotFoundException | SQLException |IOException e){
             System.out.println(e.getMessage());
         }
     }
 }
+/*
+IMG ADDED SUCCESSFULLY !!
+
+ */
