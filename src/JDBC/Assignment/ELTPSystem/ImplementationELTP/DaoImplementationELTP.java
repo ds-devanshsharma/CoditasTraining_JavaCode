@@ -46,7 +46,7 @@ ResultSet resultSet;
 
     @Override
     public void showData() throws SQLException, IOException {
-        System.out.println("---------------------------------WELCOME TO VIEW-DATA WIZARD---------------------------------");
+        System.out.println("-----------------------------------WELCOME TO VIEW-DATA WIZARD-----------------------------------");
         preparedStatement = connection.prepareStatement("SELECT * FROM ELTP WHERE BATCH_ID = ?",
                 ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
         System.out.println("ENTER BATCH-ID : ");
@@ -56,32 +56,35 @@ ResultSet resultSet;
             resultSet.beforeFirst();
             printer(resultSet);
         }
-        else System.out.println("----------------------------------RECORD NOT FOUND------------------------------------------ ");
+        else System.out.println(" RECORD NOT FOUND !!!!");
+
     }
 
     private void printer(ResultSet resultSet) throws SQLException {
 //        ResultSetMetaData data = resultSet.getMetaData();
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         while (resultSet.next()) {
-            System.out.printf("%-10d %-10s %-10d %10s\n", resultSet.getInt(1), resultSet.getString(2),
-                    resultSet.getInt(3), resultSet.getString(4)+"   "+ resultSet.getDate(5));
-        }//There is some issue in printing date console Q- Which specifier I should use with getDate() ?
-        System.out.println("-------------------------------------------------------------------------------");
+            System.out.printf("%-10d %-10s %-10d %-10s %-10s\n", resultSet.getInt(1), resultSet.getString(2),
+                    resultSet.getInt(3), resultSet.getString(4), resultSet.getDate(5).toString());
+        }//There is some issue in printing date console Q- Which specifier I should use with getDate() ? .toString()->convert date to string
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 
     @Override
     public void updateData() throws IOException, SQLException {
-        System.out.println("-------------------------------WELCOME TO UPDATION WIZARD-------------------------------");
+        System.out.println("----------------------------------WELCOME TO UPDATION WIZARD----------------------------------");
         boolean condition =true;
         System.out.println("ENTER BATCH-ID TO UPDATE RECORD : ");
         int batchID = Integer.parseInt(reader.readLine());
         while(condition){
+            System.out.println("-------------------------------------------------------------------------------");
             System.out.println("""
                     PRESS 1 TO UPDATE BATCH-NAME :\s
                     PRESS 2 TO UPADTE STUDENT-COUNT :
                     PRESS 3 TO UPDATE TRAINER-NAME :
                     PRESS 4 TO UPDATE JOIN-DATE :\s
                     PRESS 0 TO GO BACK \s""");
+            System.out.println("-------------------------------------------------------------------------------");
             switch (Integer.parseInt(reader.readLine())) {
                 case 1 -> {
                     preparedStatement = connection.prepareStatement("UPDATE ELTP SET BATCH_NAME = ? WHERE BATCH_ID = ?");
@@ -89,6 +92,8 @@ ResultSet resultSet;
                     preparedStatement.setString(1, reader.readLine());
                     preparedStatement.setInt(2, batchID);
                     if (preparedStatement.executeUpdate() > 0) System.out.println("RECORD UPDATED SUCCESSFULLY !!");
+                    else System.out.println("RECORD NOT FOUND !!!!");
+
                 }
                 case 2 -> {
                     preparedStatement = connection.prepareStatement("UPDATE ELTP SET STUDENT_COUNT = ? WHERE BATCH_ID = ? ");
@@ -96,6 +101,8 @@ ResultSet resultSet;
                     preparedStatement.setInt(1, Integer.parseInt((reader.readLine())));
                     preparedStatement.setInt(2, batchID);
                     if (preparedStatement.executeUpdate() > 0) System.out.println("RECORD UPDATED SUCCESSFULLY !!");
+                    else System.out.println("RECORD NOT FOUND !!!!");
+
                 }
                 case 3 -> {
                     preparedStatement = connection.prepareStatement("UPDATE ELTP SET TRAINER_NAME = ? WHERE BATCH_ID = ?");
@@ -103,6 +110,16 @@ ResultSet resultSet;
                     preparedStatement.setString(1, reader.readLine());
                     preparedStatement.setInt(2, batchID);
                     if (preparedStatement.executeUpdate() > 0) System.out.println("RECORD UPDATED SUCCESSFULLY !!");
+                    else System.out.println("RECORD NOT FOUND !!!!");
+
+                }
+                case 4 ->{
+                    preparedStatement = connection.prepareStatement("UPDATE ELTP SET JOIN_DATE = ? WHERE BATCH_ID = ?");
+                    System.out.println("ENTER NEW JOIN-DATE : ");
+                    preparedStatement.setDate(1, Date.valueOf(reader.readLine()));
+                    preparedStatement.setInt(2, batchID);
+                    if (preparedStatement.executeUpdate() > 0) System.out.println("RECORD UPDATED SUCCESSFULLY !!");
+                    else System.out.println("RECORD NOT FOUND !!!!");
                 }
                 case 0 -> {
                     condition = false;
@@ -120,7 +137,7 @@ ResultSet resultSet;
         System.out.println("ENTER BATCH_ID : ");
         preparedStatement.setInt(1,Integer.parseInt(reader.readLine()));
         if(preparedStatement.executeUpdate()>0) System.out.println("RECORD DELETED SUCCESSFULLY !!!");
-        else System.out.println("----------------------------------RECORD NOT FOUND------------------------------------------ ");
+        else System.out.println("RECORD NOT FOUND !!!! ");
     }
 
     @Override

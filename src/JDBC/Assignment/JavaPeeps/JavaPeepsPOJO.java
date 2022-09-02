@@ -47,4 +47,9 @@ public class JavaPeepsPOJO {
     public void setEducation(String education) {
         this.education = education;
     }
+
+    @Override
+    public String toString() {
+        return "["+internID+","+ Name+","+city+","+education+"]";
+    }
 }
