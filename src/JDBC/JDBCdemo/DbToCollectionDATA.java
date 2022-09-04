@@ -1,14 +1,13 @@
 package JDBC.JDBCdemo;
-import  JDBC.Assignment.ELTPSystem.ConnectionMaker.*;
-import JDBC.Assignment.JavaPeeps.JavaPeepsPOJO;
+import  JDBC.Assignment.DAOBasedAppication.ELTPSystem.ConnectionMaker.*;
+import JDBC.Assignment.DAOBasedAppication.JavaPeepsSystem.JavaPeepsPOJO;
 
-import static JDBC.Assignment.ELTPSystem.ConnectionMaker.ConnectionProvider.connection;
+import static JDBC.Assignment.DAOBasedAppication.ELTPSystem.ConnectionMaker.ConnectionProvider.connection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class DbToCollectionDATA {

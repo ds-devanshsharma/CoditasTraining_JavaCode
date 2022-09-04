@@ -1,6 +1,4 @@
-package JDBC.Assignment.JavaPeeps;
-
-import jdk.swing.interop.SwingInterOpUtils;
+package JDBC.Assignment.DAOBasedAppication.JavaPeepsSystem;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,10 +7,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
-public class JavaPeepsOperation implements JavaPeeps{
+ class JavaPeepsOperation implements JavaPeep{
     PreparedStatement preparedStatement ;
     BufferedReader reader =new BufferedReader(new InputStreamReader(System.in));
     JavaPeepsPOJO javaPeepsPOJO ;

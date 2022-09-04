@@ -1,13 +1,14 @@
-package JDBC.Assignment.JavaPeeps;
+package JDBC.Assignment.DAOBasedAppication.JavaPeepsSystem;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
-import java.sql.DriverManager;
 
 public class JavaPeepsMenu {
     public static BufferedReader reader  = null;
+    static JavaPeep javaPeep = new JavaPeepsOperation();
+
     static void operationMenu(Connection connection) throws IOException {
 
         System.out.println("__________________________________________________________________________________\n" +
@@ -26,19 +27,19 @@ public class JavaPeepsMenu {
                     System.out.println("YOU HAVE LOGGED OUT SUCCESSFULLY !!");
                     System.exit(0);
                 case 1 :
-                    new JavaPeepsOperation().insertData(connection);
+                    javaPeep.insertData(connection);
                     break;
                 case 2 :
-                    new JavaPeepsOperation().showData(connection);
+                    javaPeep.showData(connection);
                     break;
                 case 3 :
-                    new JavaPeepsOperation().updateData(connection);
+                    javaPeep.updateData(connection);
 
                 case 4 :
-                    new JavaPeepsOperation().deleteData(connection);
+                    javaPeep.deleteData(connection);
                     break;
                 case 5 :
-                    new JavaPeepsOperation().showAllData(connection);
+                    javaPeep.showAllData(connection);
                     break;
                 default:
                     System.out.println("THIS IS NOT CORRECT CHOICE FROM MENU !!");

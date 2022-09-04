@@ -1,8 +1,6 @@
-package JDBC.Assignment.JavaPeeps;
+package JDBC.Assignment.DAOBasedAppication.JavaPeepsSystem;
 
-import java.sql.Connection;
-
-public interface JavaPeepsDAO {
+public interface ConnectionNeeds {
       String driver = "com.mysql.cj.jdbc.Driver";
       String url ="jdbc:mysql://localhost:3306/JDBC_DATABASE";
       String user = "root";

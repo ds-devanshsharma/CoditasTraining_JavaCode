@@ -1,11 +1,10 @@
-package JDBC.Assignment.ELTPSystem;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem;
 
-import JDBC.Assignment.ELTPSystem.ImplementationELTP.DaoImplementationELTP;
+import JDBC.Assignment.DAOBasedAppication.ELTPSystem.ImplementationELTP.DaoImplementationELTP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.SQLException;
 
 public class MenuELTP {
     public static BufferedReader reader ;

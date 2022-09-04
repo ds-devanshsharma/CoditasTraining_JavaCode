@@ -17,7 +17,8 @@ public class RetrieveIMG {
                statement = connection.createStatement();
                resultSet = statement.executeQuery("SELECT IMG FROM GALLERY WHERE IMG_ID =2 ");
 
-               FileOutputStream outputStream = new FileOutputStream("C:\\Users\\coditas\\IdeaProjects\\CoditasTraining_JavaCode\\src\\JDBC\\Assignment\\ImageOperation\\RetrievedIMG.jpg");
+               FileOutputStream outputStream = new FileOutputStream("C:\\Users\\coditas\\IdeaProjects\\" +
+                       "CoditasTraining_JavaCode\\src\\JDBC\\Assignment\\ImageOperation\\RetrievedIMG.jpg");
                while (resultSet.next()) {
                    outputStream.write(resultSet.getBytes(1));
                }

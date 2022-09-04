@@ -1,8 +1,8 @@
-package JDBC.Assignment.ELTPSystem.ImplementationELTP;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem.ImplementationELTP;
 
-import JDBC.Assignment.ELTPSystem.DaoELTP.DaoELTP;
-import static JDBC.Assignment.ELTPSystem.ConnectionMaker.ConnectionProvider.connection;
-import JDBC.Assignment.ELTPSystem.PojoELTP.PojoELTP;
+import JDBC.Assignment.DAOBasedAppication.ELTPSystem.DaoELTP.DaoELTP;
+import static JDBC.Assignment.DAOBasedAppication.ELTPSystem.ConnectionMaker.ConnectionProvider.connection;
+import JDBC.Assignment.DAOBasedAppication.ELTPSystem.PojoELTP.PojoELTP;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

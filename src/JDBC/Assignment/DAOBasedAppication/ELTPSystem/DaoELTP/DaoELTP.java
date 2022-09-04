@@ -1,4 +1,4 @@
-package JDBC.Assignment.ELTPSystem.DaoELTP;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem.DaoELTP;
 
 import java.io.IOException;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package JDBC.Assignment.ELTPSystem.ConnectionMaker;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem.ConnectionMaker;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

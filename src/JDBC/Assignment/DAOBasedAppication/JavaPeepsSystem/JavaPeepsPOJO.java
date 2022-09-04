@@ -1,4 +1,4 @@
-package JDBC.Assignment.JavaPeeps;
+package JDBC.Assignment.DAOBasedAppication.JavaPeepsSystem;
 
 public class JavaPeepsPOJO {
     int internID;

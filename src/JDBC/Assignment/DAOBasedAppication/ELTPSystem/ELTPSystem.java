@@ -1,6 +1,6 @@
-package JDBC.Assignment.ELTPSystem;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem;
 
-import JDBC.Assignment.ELTPSystem.ConnectionMaker.ConnectionProvider;
+import JDBC.Assignment.DAOBasedAppication.ELTPSystem.ConnectionMaker.ConnectionProvider;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -8,7 +8,6 @@ import java.sql.SQLException;
 public class ELTPSystem {
     public static void main(String[] args) {
         System.out.println("--------------------------------WELCOME TO ELTP SYSTEM---------------------------------------- ");
-
         try {
             // making connection to DB
             ConnectionProvider.connectionProvider();

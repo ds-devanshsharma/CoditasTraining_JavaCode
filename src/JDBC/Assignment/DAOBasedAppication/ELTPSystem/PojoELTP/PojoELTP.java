@@ -1,4 +1,4 @@
-package JDBC.Assignment.ELTPSystem.PojoELTP;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem.PojoELTP;
 
 public class PojoELTP {
     int batchID;

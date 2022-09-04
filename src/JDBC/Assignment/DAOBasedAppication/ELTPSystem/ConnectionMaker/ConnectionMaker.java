@@ -1,4 +1,4 @@
-package JDBC.Assignment.ELTPSystem.ConnectionMaker;
+package JDBC.Assignment.DAOBasedAppication.ELTPSystem.ConnectionMaker;
 
 public interface ConnectionMaker {
     String driver = "com.mysql.cj.jdbc.Driver";

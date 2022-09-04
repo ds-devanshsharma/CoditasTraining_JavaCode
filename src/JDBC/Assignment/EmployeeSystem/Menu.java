@@ -1,11 +1,7 @@
-package JDBC.Assignment;
+package JDBC.Assignment.EmployeeSystem;
 
-import JDBC.Assignment.EmployeeSystem.EmployeeSystem;
-
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 import static JDBC.Assignment.EmployeeSystem.EmployeeSystem.preparedStatement;
 import static JDBC.Assignment.EmployeeSystem.EmployeeSystem.reader;
