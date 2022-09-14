@@ -1,0 +1,25 @@
+.form{
+margin: 10px;
+width: 50%;
+border: 3px solid green;
+padding: 30px;
+background-color: #0DBDB2;
+}
+
+h1{
+text-align:center;
+}
+
+
+input{
+padding:10px;
+border-radius:5px;
+width:50%
+}
+
+.form-container{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
