@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        .container{
+        width :100%;
+        border:10px;
+        margin:auto;
+        font-size:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" align="center">
+    <h1>Registration Form</h1><hr><br>
+    <form action="register" method="post">
+        <table border="10">
+            <tr>
+                <td>Name : </td><td><input type="text" name="username" placeholder="username"></td>
+            </tr>
+            <tr>
+                <td>Password :</td><td><input type="password" name="password" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td>Email : </td><td><input type="email" name="email" placeholder="email"></td>
+            </tr>
+            <tr>
+                <td>Gender : </td><td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female </td>
+            </tr>
+            <tr>
+                <td>Course :</td>
+                <td><select name="course">
+                    <option value ="JAVA">Java</option>
+                    <option value ="React">React</option>
+                    <option value ="Node">Node</option>
+                    <option value =".Net">.Net</option>
+                    <option value ="Angular">Angular</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="checked" name="checkbox" ></td>
+                <td>Terms & Conditions</td>
+            </tr>
+
+
+        </table><br>
+        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+        <button type="reset" >Reset</button>
+    </form>
+</div>
+</body>
+</html>
