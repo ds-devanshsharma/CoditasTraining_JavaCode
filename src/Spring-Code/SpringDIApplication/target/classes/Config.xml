@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!--    setter dependency injection-->
+    <bean id="address" class="com.bean.Address">
+        <property name="city" value="Kanpur"/>
+        <property name="locality" value="Kalyanpur"/>
+    </bean>
+    <bean id="student" class="com.bean.Student">
+<!--        <property name="id" value="11056"/>-->
+<!--        <property name="name" value="Devansh"/>-->
+<!--        <property name="address" ref="address"/>-->
+<!--        Using Constructor Dependency Injection-->
+        <constructor-arg value="11056"/>
+        <constructor-arg value="Devansh"/>
+        <constructor-arg ref="address"/>
+    </bean>
+</beans>

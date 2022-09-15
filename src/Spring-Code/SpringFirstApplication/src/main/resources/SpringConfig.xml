@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="helloPojo" class="com.bean.HelloPojo">
+<property name="name" value="Devansh"/>
+    <property name="address" ref="address"/>
+</bean>
+
+<bean id="address" class="com.bean.Address">
+<property name="street" value="Ashok Nagar"/>
+<property name="locality" value="Kalyanpur"/>
+</bean>
+</beans>

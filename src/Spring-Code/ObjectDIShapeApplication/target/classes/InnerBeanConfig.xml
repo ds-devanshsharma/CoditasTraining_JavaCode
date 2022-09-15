@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id="point1" class="Com.bean.Point">
+    <property name="x" value="10"/>
+    <property name="y" value="5"/>
+</bean>
+<bean id="circle" class="Com.bean.Circle">
+    <property name="center" ref="point1"/>
+    <property name="radius" value="10"/>
+</bean>
+<bean id="triangle" class="Com.bean.Triangle">
+    <property name="a" ref="point1"/>
+    <property name="b" >
+        <bean id="point2" class="Com.bean.Point">
+            <property name="x" value="11"/>
+            <property name="y" value="12"/>
+        </bean>
+    </property>
+</bean>
+<bean id="shape" class="Com.bean.Shape">
+    <property name="circle" ref="circle"/>
+    <property name="triangle" ref="triangle"/>
+</bean>
+
+</beans>
