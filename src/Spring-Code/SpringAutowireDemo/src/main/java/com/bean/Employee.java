@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class Employee {
     int id;
     String name;
-
+    @Autowired
     Address eAddress;
 
     @Override

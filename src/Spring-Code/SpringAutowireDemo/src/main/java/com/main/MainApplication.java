@@ -10,12 +10,12 @@ import java.util.Scanner;
 
 public class MainApplication {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("ByConstructor.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("ByName.xml");
         Scanner scanner= new Scanner(System.in);
         //getBean("ref")
         //getBean("classname")
         //getBean("ref","classname")
-//        System.out.println(context.getBean("student"));
+        System.out.println(context.getBean("student"));
 // getBean("object" , "all the values respective to constructor")
 //        System.out.println(context.getBean("student",11078,"Devansh"
 //                ,new Address("Kanpur","UP")));
