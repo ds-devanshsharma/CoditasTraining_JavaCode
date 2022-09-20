@@ -1,4 +1,4 @@
-package Application.model;
+package Application.DisplayModule;
 import Application.JDBCConnection.JDBCConnectionImplementation;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 @WebServlet("/studentDisplay")
 public class StudentDisplayServlet extends HttpServlet {
@@ -28,14 +29,20 @@ public class StudentDisplayServlet extends HttpServlet {
                 //JDBC fetching
                 resultSet = fetchData(req, resp);
                 if (resultSet.next()) {
-                    String path= "Images/"+resultSet.getString(5);
+                    String studentPath= "Images/"+resultSet.getString(5);
                     out.println("" +
-                            "<div style='width:800px; margin:0 auto; border:1px'>\n"
+                            "<div style='text-align:left'>\n"
                             + " <br>Profile : <br> "
-                            + "<img src='"+path+"' width='200' height='200' alt='Img not Found !' >"
+                            + "<img src='"+studentPath+"' width='200' height='200' alt='Img not Found !' >"
                             + "<br>StudentID : " + resultSet.getInt(1)
                             + "<br>Username : " + resultSet.getString(2)
-                            + "<br>About me :" + resultSet.getString(3) +
+                            + "<br>About me :" + resultSet.getString(3));
+
+                    String teacherPicPath="Images/"+ getTeacherPic(resultSet.getInt(4));
+                    out.println("</div>" +
+                            "<div style='text-align:right'>" +
+                            "Your Teacher :<br>" +
+                            "<img src='"+teacherPicPath+"' width='200' height='200' alt='Img not Found !' >"+
                             "</div>");
                 } else {
                     out.println("<h3>Record Not found !</h3>");
@@ -51,6 +58,20 @@ public class StudentDisplayServlet extends HttpServlet {
             System.out.println(e.getMessage());
         }
 
+    }
+
+    private String  getTeacherPic(int id) throws SQLException {
+        try{
+            preparedStatement = JDBCConnectionImplementation.getJDBCConnection()
+                    .prepareStatement("SELECT PICPATH FROM TEACHER WHERE TEACHER_ID =?");
+            preparedStatement.setInt(1,id);
+            resultSet = preparedStatement.executeQuery();
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        resultSet.next();
+        return resultSet.getString("PICPATH");
     }
 
     private ResultSet fetchData(HttpServletRequest req, HttpServletResponse resp) throws IOException {

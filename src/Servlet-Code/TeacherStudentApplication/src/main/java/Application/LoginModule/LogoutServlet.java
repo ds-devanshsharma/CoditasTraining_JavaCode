@@ -1,4 +1,4 @@
-package Application.model;
+package Application.LoginModule;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

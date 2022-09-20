@@ -1,4 +1,4 @@
-package Application.model;
+package Application.LoginModule;
 
 import Application.JDBCConnection.JDBCConnectionImplementation;
 

@@ -52,7 +52,7 @@ public class RegisterTeacherServlet extends HttpServlet {
 
     private String getprofilePath(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Part part = req.getPart("profilePic");//
-        String fileName = extractFileName(part);//file name
+        String fileName = part.getSubmittedFileName();//file name
         /**
          * *** Get The Absolute Path Of The Web Application ****
          */
@@ -73,24 +73,8 @@ public class RegisterTeacherServlet extends HttpServlet {
          and append that characters in fileName so that it will  make your each image name identical.*/
         String dbFileName = UPLOAD_DIR + File.separator + fileName;
         part.write(savePath + File.separator);
-        //out.println(id+" "+firstName+" "+lastName+" "+fileName+" "+savePath);
-        /*
-         You need this loop if you submitted more than one file
-         for (Part part : request.getParts()) {
-         String fileName = extractFileName(part);
-         part.write(savePath + File.separator + fileName);
-         }*/
-        return savePath;
+
+        return fileName;
     }
 
-    private String extractFileName(Part part) {//This method will print the file name.
-        String contentDisp = part.getHeader("content-disposition");
-        String[] items = contentDisp.split(";");
-        for (String s : items) {
-            if (s.trim().startsWith("filename")) {
-                return s.substring(s.indexOf("=") + 2, s.length() - 1);
-            }
-        }
-        return "";
-    }
 }
