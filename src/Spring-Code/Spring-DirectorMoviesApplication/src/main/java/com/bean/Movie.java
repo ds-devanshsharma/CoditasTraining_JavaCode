@@ -1,9 +1,13 @@
 package com.bean;
 
+import java.util.List;
+
 public class Movie {
     private String movieName;
     private int cost;
     private float rating;
+    private List<String> cast;
+
     public String getMovieName() {
         return movieName;
     }
@@ -28,11 +32,20 @@ public class Movie {
         this.rating = rating;
     }
 
+    public List<String> getCast() {
+        return cast;
+    }
+
+    public void setCast(List<String> cast) {
+        this.cast = cast;
+    }
+
     @Override
     public String toString() {
         return
                 "[ movieName='" + movieName +
                 ", cost=" + cost +
-                ", rating=" + rating +" ]";
+                ", rating=" + rating +
+                ", cast=" + cast +" ]";
     }
 }
