@@ -1,0 +1,27 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config></context:annotation-config>
+<bean id="address" class="com.bean.Address">
+    <property name="city" value="Kanpur"/>
+    <property name="state" value="UP"/>
+</bean>
+    <bean id="student" class="com.bean.Student" >
+        <property name="id" value="11056"/>
+        <property name="name" value="Devansh"/>
+<!--        <property name="address" ref="address"/>-->
+    </bean>
+<bean id="eAddress" class="com.bean.Address">
+    <property name="city" value="Nagpur"/>
+    <property name="state" value="MH"/>
+</bean>
+    <bean id="employee" class="com.bean.Employee" >
+        <property name="id" value="11090"/>
+        <property name="name" value="Prateek"/>
+    </bean>
+</beans>
