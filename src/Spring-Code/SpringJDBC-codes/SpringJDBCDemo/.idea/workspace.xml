@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae57a1ff-f478-4623-a32b-7d3b07a874d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/SpringJDBC-codes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/DAO/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/DAO/StudentDAOImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/controller/DeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/controller/FetchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/java/com/controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/resources/Config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/webapp/AdminPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/webapp/Register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/AdminPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/Register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/classes/Config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/classes/com/DAO/StudentDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/classes/com/DAO/StudentDAOImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/classes/com/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/classes/com/controller/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/classes/com/controller/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/mysql-connector-java-8.0.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/protobuf-java-3.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-aop-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-asm-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-beans-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-context-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-core-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-expression-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-jdbc-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/lib/spring-tx-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/SpringJDBC-StudentSystem/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/Config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/DAO/StudentDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/DAO/StudentDAOImplementation$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/DAO/StudentDAOImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/controller/DeleteServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/controller/FetchServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/controller/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/classes/com/controller/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJDBC-StudentSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DAO/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DAO/BookDAOImplementaion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bean/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SpringJDBC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/src/main/java/Spring/core/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/src/main/resources/pschemaCschema.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SpringPractice/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/src/main/java/com/bean/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/src/main/java/com/bean/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/src/main/java/com/main/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/src/main/java/com/main/MainDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/src/main/resources/Config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/src/main/resources/Config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/target/classes/Config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/target/classes/Config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/target/classes/com/bean/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/target/classes/com/bean/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/target/classes/com/main/MainDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring-DirectorMoviesApplication/target/classes/com/main/MainDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringCollectionDemo/src/main/java/com/bean/DID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringCollectionDemo/src/main/java/com/bean/DID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringCollectionDemo/src/main/java/com/bean/Participants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringCollectionDemo/src/main/java/com/bean/Participants.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2F6tOD6nWn4Qem8Nx6SUtmsJS2y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="RunSpring" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.main.MainApplication" />
+      <module name="SpringJDBCDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae57a1ff-f478-4623-a32b-7d3b07a874d6" name="Changes" comment="" />
+      <created>1663824331610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663824331610</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

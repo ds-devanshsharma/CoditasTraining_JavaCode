@@ -1,6 +1,6 @@
 package com.bean;
 
-public class Participants {
+public class  Participants {
     private String name;
     private String address;
 

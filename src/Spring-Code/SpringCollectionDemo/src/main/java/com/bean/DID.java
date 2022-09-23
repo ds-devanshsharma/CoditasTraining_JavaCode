@@ -14,7 +14,6 @@ public class DID {
     public String getSeasons() {
         return seasons;
     }
-
     public void setSeasons(String seasons) {
         this.seasons = seasons;
     }

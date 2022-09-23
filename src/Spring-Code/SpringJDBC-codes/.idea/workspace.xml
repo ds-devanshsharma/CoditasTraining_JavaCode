@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="500e7665-1051-4e82-aa3c-68b6b00a7ec9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/src/main/java/Spring/core/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/src/main/resources/pschemaCschema.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringPractice/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/src/main/java/com/bean/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/src/main/java/com/bean/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/src/main/java/com/main/MainDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/src/main/java/com/main/MainDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/src/main/resources/Config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/src/main/resources/Config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/target/classes/Config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/target/classes/Config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/target/classes/com/bean/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/target/classes/com/bean/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/target/classes/com/main/MainDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-DirectorMoviesApplication/target/classes/com/main/MainDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCollectionDemo/src/main/java/com/bean/DID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCollectionDemo/src/main/java/com/bean/DID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCollectionDemo/src/main/java/com/bean/Participants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCollectionDemo/src/main/java/com/bean/Participants.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2F6qYLg4q6TwUCgzJnpRiSvRuhq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="500e7665-1051-4e82-aa3c-68b6b00a7ec9" name="Changes" comment="" />
+      <created>1663822928859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663822928859</updated>
+    </task>
+    <servers />
+  </component>
+</project>

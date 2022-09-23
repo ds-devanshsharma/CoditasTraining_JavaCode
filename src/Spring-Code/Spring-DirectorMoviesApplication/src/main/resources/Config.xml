@@ -38,6 +38,12 @@
 </util:set>
 <bean id="director1" class="com.bean.Director" >
     <property name="name" value="Karan Johar"/>
+    <property name="properties" >
+        <props>
+            <prop key="age ">34</prop>
+            <prop key="net worth ">1800</prop>
+        </props>
+    </property>
 <!--    <property name="movies">-->
 <!--        <set>-->
 <!--        <ref bean="movie1"/>-->

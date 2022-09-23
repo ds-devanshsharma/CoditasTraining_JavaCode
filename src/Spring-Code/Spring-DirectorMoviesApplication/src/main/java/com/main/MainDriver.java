@@ -9,5 +9,6 @@ public class MainDriver {
         ApplicationContext context = new ClassPathXmlApplicationContext("Config.xml");
         Director director = (Director)context.getBean("director1");
         System.out.println(director);
+        System.out.println(director.getProperties());
     }
 }
