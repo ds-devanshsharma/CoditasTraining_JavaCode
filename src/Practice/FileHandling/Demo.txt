@@ -1,0 +1,5 @@
+Running this command will add your authtoken to the default ngrok.yml configuration file.
+This will grant you access to more features and longer session times. Running tunnels will
+be listed on the endpoints page of the dashboard.
+
+ngrok config add-authtoken 2FDPVCqodS43jY4Xa4N67owmXkC_6GHMG81NBjUtuUkunVvn2
