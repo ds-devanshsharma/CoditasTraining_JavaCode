@@ -14,7 +14,7 @@ public class MainApplication {
     //public static DAOImplementation daoImplementation ;
     public static void main(String[] args) throws IOException {
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
-         daoImplementation = (DAOImplementation) context.getBean("Implementation");
+         daoImplementation =  context.getBean("Implementation",DAOImplementation.class);
 
         while(true){
             menu();

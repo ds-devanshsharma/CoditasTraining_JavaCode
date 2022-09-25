@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 
 import java.io.BufferedReader;
+import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.ResultSet;
@@ -14,6 +15,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class DAOImplementation implements EmployeeDAO{
@@ -121,7 +123,6 @@ public class DAOImplementation implements EmployeeDAO{
         list.stream().filter(employee->employee.getSalary()>10000).forEach(System.out::println);
 
     }
-
     @Override
     public void sortBasedOnCondition() {
         List<Employee> list =jdbcTemplate.query("SELECT * FROM EMPLOYEE ", new ResultSetExtractor<List<Employee>>() {

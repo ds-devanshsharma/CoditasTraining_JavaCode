@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface InternServices {
     public List<CoditasInternList> internList() throws SQLException;
-    public List<CoditasIntern> internDetailList(int internID);
+    public CoditasIntern internDetailList(int internID) throws SQLException;
 }

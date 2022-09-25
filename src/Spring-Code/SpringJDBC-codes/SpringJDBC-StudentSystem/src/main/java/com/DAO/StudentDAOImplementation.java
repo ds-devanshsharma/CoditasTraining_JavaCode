@@ -27,7 +27,6 @@ public class StudentDAOImplementation implements StudentDAO{
 
     @Override
     public  int insertStudent(Student student) {
-        System.out.println(jdbcTemplate);
         return (jdbcTemplate.update("INSERT INTO STUDENT VALUES(?,?,?,?,?)",
                             student.getId(),
                             student.getName(),

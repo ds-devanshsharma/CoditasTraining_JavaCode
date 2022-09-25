@@ -15,6 +15,10 @@ public class CoditasIntern {
         this.rating = rating;
     }
 
+    public CoditasIntern() {
+
+    }
+
     public int getInternID() {
         return internID;
     }
