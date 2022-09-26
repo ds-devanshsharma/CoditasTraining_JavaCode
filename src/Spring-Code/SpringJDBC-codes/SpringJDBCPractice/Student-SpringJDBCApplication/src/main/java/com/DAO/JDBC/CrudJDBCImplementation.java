@@ -1,10 +1,21 @@
 package com.DAO.JDBC;
 import com.bean.Address;
 import com.bean.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class CrudJDBCImplementation implements CrudJDBC{
-    private JdbcTemplate jdbcTemplate;
+
+    JdbcTemplate jdbcTemplate;
+
+    public JdbcTemplate getJdbcTemplate() {
+        return jdbcTemplate;
+    }
+
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
     @Override
     public int insertAddress( Address address) {
         return jdbcTemplate.update("INSERT INTO ADDRESS VALUES (?,?,?)"
@@ -15,7 +26,7 @@ public class CrudJDBCImplementation implements CrudJDBC{
 
     @Override
     public int insert(Student student) {
-        return jdbcTemplate.update("INSERT INTO STUDENT VLAUES(?,?,?,?,?,?)"
+        return jdbcTemplate.update("INSERT INTO STUDENT VALUES(?,?,?,?,?,?)"
                 ,student.getStudentID()
                 ,student.getFirstName()
                 ,student.getLastName()

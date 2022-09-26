@@ -11,10 +11,10 @@
     <property name="username" value="root"/>
     <property name="password" value="Coditas@123"/>
 </bean>
-<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate" >
     <property name="dataSource" ref="data"/>
 </bean>
-<bean id="Implementation" class="com.DAO.JDBC.CrudJDBCImplementation">
+<bean id="jdbcImplementation" class="com.DAO.JDBC.CrudJDBCImplementation">
     <property name="jdbcTemplate" ref="template"/>
 </bean>
 </beans>

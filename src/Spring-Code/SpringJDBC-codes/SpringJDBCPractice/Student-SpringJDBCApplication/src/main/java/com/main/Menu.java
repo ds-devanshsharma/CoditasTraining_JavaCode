@@ -2,12 +2,21 @@ package com.main;
 
 import com.DAO.StudentOperation.StudentOperationImplementation;
 import com.DAO.StudentOperation.StudentOperationList;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Menu {
+//    private JdbcTemplate jdbcTemplate;
+//    public JdbcTemplate getJdbcTemplate() {
+//        return jdbcTemplate;
+//    }
+//
+//    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+//        this.jdbcTemplate = jdbcTemplate;
+//    }
     BufferedReader reader =new BufferedReader(new InputStreamReader(System.in));
     StudentOperationList operationList  = new StudentOperationImplementation();
     void menu() throws IOException {
