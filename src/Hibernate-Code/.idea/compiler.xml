@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Hibernate-OneToMany-Application" />
+        <module name="Hibernate-StudentApplication" />
+        <module name="Hibernate-ManyToMany-Application" />
+        <module name="HibernateAnnotation-StudentApplication" />
+        <module name="Hibernate-Assignment-Employee" />
+        <module name="Hibernate-BookCRUD" />
+        <module name="HibernateFirstDemo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hibernate-Assignment-Employee" target="1.7" />
+      <module name="Hibernate-BookCRUD" target="1.8" />
+      <module name="Hibernate-ManyToMany-Application" target="1.7" />
+      <module name="Hibernate-OneToMany-Application" target="1.7" />
+      <module name="Hibernate-StudentApplication" target="1.7" />
+      <module name="HibernateAnnotation-StudentApplication" target="1.7" />
+      <module name="HibernateFirstDemo" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

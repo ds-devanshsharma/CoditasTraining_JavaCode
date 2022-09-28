@@ -6,17 +6,27 @@ public class CoditasIntern {
     private String city;
     private String batchName;
     private float rating;
+    private String imgPath;
 
-    public CoditasIntern(int internID, String internName, String city, String batchName, float rating) {
+    public CoditasIntern(int internID,String imgPath, String internName, String city, String batchName, float rating) {
         this.internID = internID;
         this.internName = internName;
         this.city = city;
         this.batchName = batchName;
         this.rating = rating;
+        this.imgPath = imgPath;
     }
 
     public CoditasIntern() {
 
+    }
+
+    public String getImgPath() {
+        return imgPath;
+    }
+
+    public void setImgPath(String imgPath) {
+        this.imgPath = imgPath;
     }
 
     public int getInternID() {
@@ -66,6 +76,7 @@ public class CoditasIntern {
                 ", internName='" + internName + '\'' +
                 ", city='" + city + '\'' +
                 ", batchName='" + batchName + '\'' +
-                ", rating=" + rating +" ]";
+                ", rating=" + rating +
+                "path = "+imgPath+ " ]";
     }
 }

@@ -3,7 +3,16 @@ package com.bean;
 public class Book {
     private int id; //primaryKey -> autoincrement
     private String bookName,authorName;
-    float price;
+    private int rating ;
+    private float price;
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
 
     @Override
     public String toString() {

@@ -9,5 +9,6 @@
         <property name="bookName" column="BOOK_NAME"/>
         <property name="authorName" column="AUTHOR_NAME"/>
         <property name="price" column="RATE"/>
+        <property name="rating" column="Rating"/>
     </class>
 </hibernate-mapping>

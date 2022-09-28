@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-Assignment-Employee/Hibernate-Assignment-Employee.iml" filepath="$PROJECT_DIR$/Hibernate-Assignment-Employee/Hibernate-Assignment-Employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-BookCRUD/Hibernate-BookCRUD.iml" filepath="$PROJECT_DIR$/Hibernate-BookCRUD/Hibernate-BookCRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hibernate-Code.iml" filepath="$PROJECT_DIR$/.idea/Hibernate-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-ManyToMany-Application/Hibernate-ManyToMany-Application.iml" filepath="$PROJECT_DIR$/Hibernate-ManyToMany-Application/Hibernate-ManyToMany-Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-OneToMany-Application/Hibernate-OneToMany-Application.iml" filepath="$PROJECT_DIR$/Hibernate-OneToMany-Application/Hibernate-OneToMany-Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-StudentApplication/Hibernate-StudentApplication.iml" filepath="$PROJECT_DIR$/Hibernate-StudentApplication/Hibernate-StudentApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateAnnotation-StudentApplication/HibernateAnnotation-StudentApplication.iml" filepath="$PROJECT_DIR$/HibernateAnnotation-StudentApplication/HibernateAnnotation-StudentApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateFirstDemo/HibernateFirstDemo.iml" filepath="$PROJECT_DIR$/HibernateFirstDemo/HibernateFirstDemo.iml" />
+    </modules>
+  </component>
+</project>

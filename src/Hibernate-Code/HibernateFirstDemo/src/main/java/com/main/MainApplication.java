@@ -29,6 +29,8 @@ public class MainApplication {
         bookBean.setAuthorName(reader.readLine());
         System.out.println("Enter Price : ");
         bookBean.setPrice(Float.parseFloat(reader.readLine()));
+        System.out.println("Enter BookRating :");
+        bookBean.setRating(Integer.parseInt(reader.readLine()));
         int check =(int)session.save(bookBean);
         if(check !=0)
             transaction.commit();

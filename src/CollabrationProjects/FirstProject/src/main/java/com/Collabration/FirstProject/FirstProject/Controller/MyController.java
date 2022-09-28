@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins={"*"} , maxAge = 4800,allowCredentials = "false")
 public class MyController {
     @Autowired
     InternServices internServices;

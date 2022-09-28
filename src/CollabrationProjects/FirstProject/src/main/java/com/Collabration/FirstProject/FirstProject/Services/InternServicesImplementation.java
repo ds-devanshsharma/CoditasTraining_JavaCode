@@ -45,6 +45,7 @@ public class InternServicesImplementation implements InternServices{
             intern.setCity(resultSet.getString(3));
             intern.setBatchName(resultSet.getString(4));
             intern.setRating(resultSet.getFloat(5));
+            intern.setImgPath(resultSet.getString(6));
         }
         return intern;
     }
