@@ -1,7 +1,5 @@
 package com.SecondProject.CricketProject.Entities;
 
-import com.SecondProject.CricketProject.Entities.Pojo.Award;
-
 import java.util.List;
 public class Cricketer {
     private int id;
@@ -9,7 +7,7 @@ public class Cricketer {
     private int age;
 
 //    private Date dob;
-    private List<String> teams;
+//    private List<String> teams;
     private String nickName;
     private String battingStyle;
     private String bowlingStyle;
@@ -24,7 +22,7 @@ public class Cricketer {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", teams=" + teams +
+
                 ", nickName='" + nickName + '\'' +
                 ", battingStyle='" + battingStyle + '\'' +
                 ", bowlingStyle='" + bowlingStyle + '\'' +
@@ -75,13 +73,13 @@ public class Cricketer {
 //        this.dob = dob;
 //    }
 
-    public List<String> getTeams() {
-        return teams;
-    }
-
-    public void setTeams(List<String> teams) {
-        this.teams = teams;
-    }
+//    public List<String> getTeams() {
+//        return teams;
+//    }
+//
+//    public void setTeams(List<String> teams) {
+//        this.teams = teams;
+//    }
 
     public String getNickName() {
         return nickName;

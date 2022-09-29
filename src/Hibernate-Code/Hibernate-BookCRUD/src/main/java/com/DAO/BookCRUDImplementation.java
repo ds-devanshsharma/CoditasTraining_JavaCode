@@ -39,9 +39,17 @@ public class BookCRUDImplementation implements BookCRUD {
     public void fetchBookByID(int id) {
         Session session = SessionFactoryProvider.getSessionFactoryProvider().openSession();
         transaction = session.beginTransaction();
-        query = session.createQuery("from Book where bookID =:i");
-        query.setParameter("i",id);
-        query.list().stream().forEach(System.out::println);
+//        query = session.createQuery("from Book where bookID =:i");
+//        query.setParameter("i",id);
+//        query.list().stream().forEach(System.out::println);
+
+        // way->2 using session.get(Classname.class,int id)/session.load(classname.class,int id)
+        book = session.get(Book.class,id);
+        System.out.println(book);
+
+        //way-> using session.byId(classname.class).getReference(int id);
+        book = session.byId(Book.class).getReference(id);
+        System.out.println(book);
     }
     @Override
     public void deleteBook(int id ) {

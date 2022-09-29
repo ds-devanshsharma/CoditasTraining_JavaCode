@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0605c58-566a-4996-8b36-159d5b139a76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/Entities/Award.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/SpringSecurity/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/Spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/DAO/JDBC/CrudJDBC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/DAO/JDBC/CrudJDBCImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/DAO/StudentOperation/StudentOperationImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/DAO/StudentOperation/StudentOperationList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/bean/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/main/MainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/classes/com/main/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/mysql-connector-java-8.0.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/protobuf-java-3.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-aop-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-asm-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-beans-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-context-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-core-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-expression-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-jdbc-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/lib/spring-tx-3.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Student-SpringJDBCApplication/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/Entities/Cricketer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/Entities/Cricketer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/Entities/Pojo/Award.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/services/CricketerServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/services/CricketerServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/services/CricketerServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/java/com/SecondProject/CricketProject/services/CricketerServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../CollabrationProjects/CricketProject/CricketProject/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Servlet-Code/HttpSessionStateManagement/target/classes/FirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Servlet-Code/HttpSessionStateManagement/target/classes/FirstServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Servlet-Code/HttpSessionStateManagement/target/classes/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Servlet-Code/HttpSessionStateManagement/target/classes/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Servlet-Code/HttpSessionStateManagement/target/classes/SecondServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Servlet-Code/HttpSessionStateManagement/target/classes/SecondServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Servlet-Code/ServletFirstDemo/target/classes/Com/Example/ByeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Servlet-Code/ServletFirstDemo/target/classes/Com/Example/ByeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Servlet-Code/ServletFirstDemo/target/classes/Com/Example/LoginPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Servlet-Code/ServletFirstDemo/target/classes/Com/Example/LoginPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DAO/JDBC/CrudJDBCImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DAO/JDBC/CrudJDBCImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DAO/StudentOperation/StudentOperationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DAO/StudentOperation/StudentOperationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/main/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/main/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringTest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringTest/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FPSSatOWLDn1NlFcmMbMmXsaP9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0605c58-566a-4996-8b36-159d5b139a76" name="Changes" comment="" />
+      <created>1664392230711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664392230711</updated>
+    </task>
+    <servers />
+  </component>
+</project>

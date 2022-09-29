@@ -14,7 +14,7 @@
 <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate" >
     <property name="dataSource" ref="data"/>
 </bean>
-<bean id="jdbcImplementation" class="com.main.Menu">
+<bean id="jdbcImplementation" class="com.DAO.JDBC.CrudJDBCImplementation">
     <property name="jdbcTemplate" ref="template"/>
 </bean>
 </beans>
