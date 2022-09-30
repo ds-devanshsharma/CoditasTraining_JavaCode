@@ -27,7 +27,9 @@ public class RegisterStudentServlet extends HttpServlet {
         out = resp.getWriter();
         subject = new Subject();
         student = new Student();
-        subject.setMaths(new HashMap<String, Integer>());
+        subjectAndScoreMap.put(req.getParameter("maths"), Integer.parseInt(req.getParameter("mMaths"))
+        subject.setMaths(subjectAndScoreMap.get("Maths")
+                );
 
         //  setting student
         student.setStudentID(Integer.parseInt(req.getParameter("id")));
