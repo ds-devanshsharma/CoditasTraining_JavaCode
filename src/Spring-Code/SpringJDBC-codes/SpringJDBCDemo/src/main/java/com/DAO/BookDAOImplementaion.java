@@ -76,7 +76,7 @@ public class BookDAOImplementaion implements BookDAO {
                   book.setPrice(resultSet.getFloat(4));
                   return book;
               }
-          })   ;
+          });
           for (Book item :bookList)
               System.out.println(item);
 
@@ -90,14 +90,12 @@ public class BookDAOImplementaion implements BookDAO {
         book = jdbcTemplate.query(query,new ResultSetExtractor<Book>() {
             @Override
             public Book extractData(ResultSet resultSet) throws SQLException, DataAccessException {
-                List<Book> list = new ArrayList<>();
                 while(resultSet.next()){
                     book=new Book();
                     book.setBookID(resultSet.getInt(1));
                     book.setBookName(resultSet.getString(2));
                     book.setAuthorName(resultSet.getString(3));
                     book.setPrice(resultSet.getFloat(4));
-                    list.add(book);
                 }
                 return book;
             }
