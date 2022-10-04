@@ -1,0 +1,25 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bean.IPLTeam" table="IplTeam">
+        <id name="teamID" >
+            <generator class="increment"></generator>
+        </id>
+        <property name="teamName" column="TEAM_NAME"></property>
+        <property name="ownerName" column="OWNER-NAME"></property>
+        <map name="playerMap" cascade="all" table="joinedTable">
+            <key column="teamID"/>
+            <index column="countryName" type="string" />
+            <many-to-many column="playerID" class="com.bean.Player"></many-to-many>
+        </map>
+    </class>
+
+    <class name="com.bean.Player" table="Player_Details">
+        <id name="playerID">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="playerName"></property>
+        <property name="bidValue"></property>
+    </class>
+</hibernate-mapping>

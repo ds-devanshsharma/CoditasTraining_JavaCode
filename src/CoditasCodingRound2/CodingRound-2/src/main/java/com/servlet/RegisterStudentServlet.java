@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -20,22 +21,18 @@ public class RegisterStudentServlet extends HttpServlet {
     Student student;
     PrintWriter out;
     List<Subject> listOfSubjects = new ArrayList<>();
-    HashMap<String,Integer> subjectAndScoreMap = new HashMap<>();
+//    HashMap<String,Integer> subjectAndScoreMap = new HashMap<>();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         out = resp.getWriter();
         subject = new Subject();
         student = new Student();
-        subjectAndScoreMap.put(req.getParameter("maths"), Integer.parseInt(req.getParameter("mMaths"))
-        subject.setMaths(subjectAndScoreMap.get("Maths")
-                );
-
+//        subjectAndScoreMap.put(req.getParameter("maths"), Integer.parseInt(req.getParameter("mMaths"));
+//        subject.setMaths()
         //  setting student
         student.setStudentID(Integer.parseInt(req.getParameter("id")));
         student.setStudentName(req.getParameter("name"));
-
-
 
     }
 }

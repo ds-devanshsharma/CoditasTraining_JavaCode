@@ -6,7 +6,7 @@ import java.util.List;
 public class Student {
     private int studentID;
     private String StudentName;
-    private HashMap<Subject,Integer> listOfSubject;
+    private List<Subject> listOfSubject;
 
     @Override
     public String toString() {

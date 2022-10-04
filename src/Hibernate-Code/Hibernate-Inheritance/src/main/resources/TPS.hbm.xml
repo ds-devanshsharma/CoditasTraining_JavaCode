@@ -6,17 +6,19 @@
         <id name="empID">
             <generator class="assigned"/>
         </id>
-<!--        <discriminator column="IDENTIFIER" type="string"/>-->
+        <!--        <discriminator column="IDENTIFIER" type="string"/>-->
         <property name="name" column="Name"/>
-        <union-subclass name="com.bean.PartTimeEmployee" table="TPC">
+        <joined-subclass name="com.bean.PartTimeEmployee" table="TPC">
+            <key column="eID" ></key>
             <property name="no_of_hrs" column="FIX_NO_HRS"/>
             <property name="salary_per_hrs" column="FIX_SALARY_PER_HOUR"/>
-        </union-subclass>
-        <union-subclass name="com.bean.FullTimeEmployee" >
+        </joined-subclass>
+        <joined-subclass name="com.bean.FullTimeEmployee" >
+            <key column="eID"></key>
             <property name="fixSalary" column="FIX_SALARY"/>
             <property name="extra_hrs" column="EXTRA_HRS"/>
             <property name="salary_perHour" column="EXTRA_SALARY_PER_HRS"/>
-        </union-subclass>
+        </joined-subclass>
     </class>
 
 </hibernate-mapping>

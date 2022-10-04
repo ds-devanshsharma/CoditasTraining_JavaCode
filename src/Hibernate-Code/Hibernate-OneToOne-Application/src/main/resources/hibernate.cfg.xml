@@ -15,7 +15,7 @@
         </property>
         <property name="show_sql">true</property>
         <property name="format_sql"></property>
-        <mapping class="com.bean.Question"/>
-        <mapping class="com.bean.Answer"/>
+        <mapping class="com.bean.Author"/>
+        <mapping class="com.bean.Book"/>
     </session-factory>
 </hibernate-configuration>
