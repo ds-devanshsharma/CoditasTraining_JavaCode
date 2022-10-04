@@ -11,27 +11,13 @@ public class Student {
     @Column(name = "F_NAME")
     private String firstName ;
     private String lastName ;
+
     private String gender ;
     private String stream ;
     private float rating ;
     private Date dob ;
-    @OneToOne
-    private Address address ;
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "enrollmentNumber=" + enrollmentNumber +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", gender='" + gender + '\'' +
-                ", stream='" + stream + '\'' +
-                ", rating=" + rating +
-                ", dob='" + dob + '\'' +
-                ", address=" + address +
-                '}';
-    }
-
+//    @OneToOne
+//    private Address address ;
 
 
     public int getEnrollmentNumber() {
@@ -90,11 +76,16 @@ public class Student {
         this.dob = dob;
     }
 
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "enrollmentNumber=" + enrollmentNumber +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", stream='" + stream + '\'' +
+                ", rating=" + rating +
+                ", dob=" + dob +
+                '}';
     }
 }

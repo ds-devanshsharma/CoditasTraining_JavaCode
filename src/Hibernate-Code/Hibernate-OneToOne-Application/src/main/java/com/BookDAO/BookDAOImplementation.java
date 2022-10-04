@@ -22,13 +22,14 @@ public class BookDAOImplementation implements BookDAO{
 
         Session session = SessionFactoryMaker.sessionFactoryProvider().openSession();
         Transaction transaction=session.beginTransaction();
-//        check1 = (long)session.save(author);
-        check2 = (int)session.save(this.getBookData());
+        book = getBook();
+        session.save(book);
+        session.save(author);
         transaction.commit();
         System.out.println("RECORD ADDED SUCCESSFULLY !! ");
 
     }
-    Book getBookData() throws IOException {
+    Book getBook() throws IOException {
         book = new Book();
 //        System.out.println("ENTER BOOK-ID : ");
 //        book.setBookID(Integer.parseInt(reader.readLine()));
@@ -36,10 +37,11 @@ public class BookDAOImplementation implements BookDAO{
         book.setBookName(reader.readLine());
         System.out.println("ENTER BOOK-PRICE : ");
         book.setPrice(Float.parseFloat(reader.readLine()));
-        book.setAuthor(this.getAuthor());
+        author = getAuthorData();
+        book.setAuthor(author);
         return book;
     }
-    Author getAuthor() throws IOException {
+    Author getAuthorData() throws IOException {
         author = new Author();
         System.out.println("ENTER AUTHOR ID :");
         author.setAuthorID(Integer.parseInt(reader.readLine()));

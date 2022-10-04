@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AdditionServlet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdditionServlet/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminUserApp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminUserApp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminUserApplication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminUserApplication/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assignment/RegisterFormServletJSP/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assignment/RegisterFormServletJSP/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EmployeeManagement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EmployeeManagement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HttpSessionStateManagement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HttpSessionStateManagement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletFirstDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletFirstDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletTest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletUserValidation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletUserValidation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletWithAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletWithAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StateManagement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StateManagement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TeacherStudentApplication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TeacherStudentApplication/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

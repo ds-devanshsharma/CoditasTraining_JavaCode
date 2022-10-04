@@ -17,6 +17,7 @@ public class StudentDAOImpl implements StudentDAO{
     public void registerStudent(Student student) {
         Session session = sessionFactory.openSession();
         transaction = session.beginTransaction();
+//        session.save(student.getAddress());
         session.save(student);
         transaction.commit();
     }
@@ -24,6 +25,7 @@ public class StudentDAOImpl implements StudentDAO{
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         student = session.get(Student.class,id);
+//        session.delete(student.getAddress());
         session.delete(student);
         session.getTransaction().commit();
     }
@@ -34,9 +36,9 @@ public class StudentDAOImpl implements StudentDAO{
         return session.createQuery("FROM Student").list();
     }
     @Override
-    public Student fetchStudentById(int id) {
+    public Student fetchStudentById(int enrollmentID) {
         Session session = sessionFactory.openSession();
-        return session.get(Student.class,id);
+        return session.get(Student.class, enrollmentID);
     }
 
     @Override
@@ -44,7 +46,7 @@ public class StudentDAOImpl implements StudentDAO{
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         session.saveOrUpdate(student);
-        session.saveOrUpdate(student.getAddress());
+//        session.saveOrUpdate(student.getAddress());
         session.getTransaction().commit();
     }
 }

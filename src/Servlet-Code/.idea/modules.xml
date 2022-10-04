@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AdditionServlet/AdditionServlet.iml" filepath="$PROJECT_DIR$/AdditionServlet/AdditionServlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AdminUserApp/AdminUserApp.iml" filepath="$PROJECT_DIR$/AdminUserApp/AdminUserApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AdminUserApplication/AdminUserApplication.iml" filepath="$PROJECT_DIR$/AdminUserApplication/AdminUserApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EmployeeManagement/EmployeeManagement.iml" filepath="$PROJECT_DIR$/EmployeeManagement/EmployeeManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HttpSessionStateManagement/HttpSessionStateManagement.iml" filepath="$PROJECT_DIR$/HttpSessionStateManagement/HttpSessionStateManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment/RegisterFormServletJSP/RegisterFormServletJSP.iml" filepath="$PROJECT_DIR$/Assignment/RegisterFormServletJSP/RegisterFormServletJSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Servlet-Code.iml" filepath="$PROJECT_DIR$/.idea/Servlet-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletDemo/ServletDemo.iml" filepath="$PROJECT_DIR$/ServletDemo/ServletDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletFirstDemo/ServletFirstDemo.iml" filepath="$PROJECT_DIR$/ServletFirstDemo/ServletFirstDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletTest/ServletTest.iml" filepath="$PROJECT_DIR$/ServletTest/ServletTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletUserValidation/ServletUserValidation.iml" filepath="$PROJECT_DIR$/ServletUserValidation/ServletUserValidation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletWithAnnotation/ServletWithAnnotation.iml" filepath="$PROJECT_DIR$/ServletWithAnnotation/ServletWithAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StateManagement/StateManagement.iml" filepath="$PROJECT_DIR$/StateManagement/StateManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TeacherStudentApplication/TeacherStudentApplication.iml" filepath="$PROJECT_DIR$/TeacherStudentApplication/TeacherStudentApplication.iml" />
+    </modules>
+  </component>
+</project>

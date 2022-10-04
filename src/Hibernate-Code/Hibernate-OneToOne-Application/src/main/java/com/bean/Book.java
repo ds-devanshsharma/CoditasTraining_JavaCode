@@ -6,24 +6,12 @@ import javax.persistence.*;
 
 @Entity
 public class Book {
-    @Id@GeneratedValue(strategy = GenerationType.AUTO)@ColumnDefault("1111")
+    @Id@GeneratedValue(strategy = GenerationType.AUTO)
     private int bookID;
     private String bookName;
     private float price;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne@JoinColumn(name = "authorID")
     private Author author;
-
-    public int getBookID() {
-        return bookID;
-    }
-
-    public void setBookID(int bookID) {
-        this.bookID = bookID;
-    }
-
-    public String getBookName() {
-        return bookName;
-    }
 
     @Override
     public String toString() {
@@ -43,6 +31,22 @@ public class Book {
         this.author = author;
     }
 
+
+    public Book() {
+    }
+
+    public int getBookID() {
+        return bookID;
+    }
+
+    public void setBookID(int bookID) {
+        this.bookID = bookID;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
@@ -54,5 +58,4 @@ public class Book {
     public void setPrice(float price) {
         this.price = price;
     }
-
 }

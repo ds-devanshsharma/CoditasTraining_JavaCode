@@ -51,10 +51,6 @@ public class MovieApplication {
         session.save(iplTeam1);
         transaction.commit();
         System.out.println("done");
-
         System.out.println(iplTeam1);
-
-
-
     }
 }

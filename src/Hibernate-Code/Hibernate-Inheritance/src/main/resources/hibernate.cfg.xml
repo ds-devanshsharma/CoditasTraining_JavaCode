@@ -13,6 +13,6 @@
             <!--            create-->
         </property>
         <property name="show_sql">true</property>
-        <mapping resource="TPC.hbm.xml"/>
+        <mapping resource="TPS.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

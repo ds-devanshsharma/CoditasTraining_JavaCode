@@ -9,7 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Author {
-    @Id@GeneratedValue(strategy = GenerationType.AUTO)@ColumnDefault("9999")
+    @Id@GeneratedValue(strategy = GenerationType.AUTO)
     private int authorID;
     private String authorName;
 

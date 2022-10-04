@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-BasicBookCRUD/Hibernate-BasicBookCRUD.iml" filepath="$PROJECT_DIR$/Hibernate-BasicBookCRUD/Hibernate-BasicBookCRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-Hotel-DishesApplication/Hibernate-Hotel-DishesApplication.iml" filepath="$PROJECT_DIR$/Hibernate-Hotel-DishesApplication/Hibernate-Hotel-DishesApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-OneToOne-Student-Laptop/Hibernate-OneToOne-Student-Laptop.iml" filepath="$PROJECT_DIR$/Hibernate-OneToOne-Student-Laptop/Hibernate-OneToOne-Student-Laptop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hibernate-Practice.iml" filepath="$PROJECT_DIR$/.idea/Hibernate-Practice.iml" />
+    </modules>
+  </component>
+</project>
