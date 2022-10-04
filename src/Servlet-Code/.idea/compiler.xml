@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="TeacherStudentApplication" />
+        <module name="AdminUserApplication" />
+        <module name="AdditionServlet" />
+        <module name="ServletDemo" />
+        <module name="EmployeeManagement" />
+        <module name="ServletWithAnnotation" />
+        <module name="RegisterFormServletJSP" />
+        <module name="ServletUserValidation" />
+        <module name="HttpSessionStateManagement" />
+        <module name="AdminUserApp" />
+        <module name="StateManagement" />
+        <module name="ServletFirstDemo" />
+        <module name="ServletTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AdditionServlet" target="1.7" />
+      <module name="AdminUserApp" target="1.7" />
+      <module name="AdminUserApplication" target="1.7" />
+      <module name="EmployeeManagement" target="1.7" />
+      <module name="HttpSessionStateManagement" target="1.7" />
+      <module name="RegisterFormServletJSP" target="1.7" />
+      <module name="ServletDemo" target="1.7" />
+      <module name="ServletFirstDemo" target="1.7" />
+      <module name="ServletTest" target="1.7" />
+      <module name="ServletUserValidation" target="1.7" />
+      <module name="ServletWithAnnotation" target="1.7" />
+      <module name="StateManagement" target="1.7" />
+      <module name="TeacherStudentApplication" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

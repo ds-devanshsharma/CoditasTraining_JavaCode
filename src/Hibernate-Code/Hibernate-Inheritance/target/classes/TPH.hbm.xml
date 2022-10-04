@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bean.Employee" discriminator-value="EMP" table="TPH_Emp">
+        <id name="empID">
+            <generator class="assigned"/>
+        </id>
+        <discriminator column="IDENTIFIER" type="string"/>
+        <property name="name" column="Name"/>
+        <subclass name="com.bean.PartTimeEmployee" discriminator-value="PART_EMP" >
+            <property name="no_of_hrs" column="FIX_NO_HRS"/>
+            <property name="salary_per_hrs" column="FIX_SALARY_PER_HOUR"/>
+        </subclass>
+        <subclass name="com.bean.FullTimeEmployee" discriminator-value="FULL_EMP" >
+            <property name="fixSalary" column="FIX_SALARY"/>
+            <property name="extra_hrs" column="EXTRA_HRS"/>
+            <property name="salary_perHour" column="EXTRA_SALARY_PER_HRS"/>
+        </subclass>
+    </class>
+</hibernate-mapping>
