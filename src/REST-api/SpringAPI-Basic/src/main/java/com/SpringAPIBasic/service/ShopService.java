@@ -1,6 +1,6 @@
-package com.service;
+package com.SpringAPIBasic.service;
 
-import com.entities.Shop;
+import com.SpringAPIBasic.entities.Shop;
 
 import java.util.List;
 

@@ -7,7 +7,7 @@ public class EntityManagerFactoryProvider {
     private static EntityManagerFactory managerFactory ;
     private EntityManagerFactoryProvider(){}
     public static EntityManagerFactory EntityMangerFactoryProviderMethod(){
-        if(managerFactory==null ){
+        if(managerFactory==null){
             managerFactory = Persistence.createEntityManagerFactory("ZooUnit");
         }
         return managerFactory;

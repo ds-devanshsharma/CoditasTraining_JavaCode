@@ -9,7 +9,7 @@ public class Zoo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int zooID;
     private String zooName;
-    @OneToMany( cascade = CascadeType.ALL , mappedBy = "zoo")
+    @OneToMany( cascade = CascadeType.ALL, mappedBy = "zoo" ,fetch = FetchType.EAGER)
     private List<Animal> animal;
 
     public List<Animal> getAnimal() {

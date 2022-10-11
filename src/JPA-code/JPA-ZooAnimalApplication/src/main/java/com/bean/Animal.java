@@ -8,18 +8,29 @@ public class Animal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int animalID;
     private String animalName;
-    private String category;
-    @ManyToOne(cascade = CascadeType.ALL)
+    private int animalAge;
+    @ManyToOne(fetch = FetchType.EAGER)
     private Zoo zoo;
+
     @Override
     public String toString() {
         return "Animal{" +
                 "animalID=" + animalID +
                 ", animalName='" + animalName + '\'' +
+                ", animalAge=" + animalAge +
                 ", category='" + category + '\'' +
-
                 '}';
     }
+
+    public int getAnimalAge() {
+        return animalAge;
+    }
+
+    public void setAnimalAge(int animalAge) {
+        this.animalAge = animalAge;
+    }
+
+    private String category;
 
     public int getAnimalID() {
         return animalID;

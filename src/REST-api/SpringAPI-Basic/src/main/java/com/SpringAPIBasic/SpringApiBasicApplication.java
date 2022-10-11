@@ -1,6 +1,6 @@
 package com.SpringAPIBasic;
 
-import com.HibernateUtils.SessionFactoryProvider;
+import com.SpringAPIBasic.HibernateUtils.SessionFactoryProvider;
 import org.hibernate.SessionFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

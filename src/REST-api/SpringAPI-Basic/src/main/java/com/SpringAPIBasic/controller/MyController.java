@@ -1,9 +1,8 @@
-package com.controller;
+package com.SpringAPIBasic.controller;
 
-import com.entities.Shop;
-import com.service.ShopService;
+import com.SpringAPIBasic.entities.Shop;
+import com.SpringAPIBasic.service.ShopService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.List;
 public class MyController {
     @Autowired
     ShopService service;
-    @RequestMapping(path = "/addShop",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/addShop",method = RequestMethod.POST,consumes = "application/JSON")
     void addShopController(@RequestBody Shop shop){
         service.addShop(shop);
     }

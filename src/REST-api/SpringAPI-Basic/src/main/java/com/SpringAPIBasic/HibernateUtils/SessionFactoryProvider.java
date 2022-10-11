@@ -1,4 +1,4 @@
-package com.HibernateUtils;
+package com.SpringAPIBasic.HibernateUtils;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
