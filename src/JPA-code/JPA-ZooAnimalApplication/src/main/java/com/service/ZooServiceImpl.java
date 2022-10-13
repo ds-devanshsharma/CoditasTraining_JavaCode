@@ -36,7 +36,7 @@ public class ZooServiceImpl implements ZooService{
     public void displayZooList(){
         EntityManager entityManager = entityManagerFactory.createEntityManager();
        List<Zoo> list =  entityManager.createQuery("from Zoo").getResultList();
-       list.stream().map(zoo->zoo.getZooName()).forEach(System.out::println);
+       list.stream().forEach(System.out::println);
     }
 
     @Override

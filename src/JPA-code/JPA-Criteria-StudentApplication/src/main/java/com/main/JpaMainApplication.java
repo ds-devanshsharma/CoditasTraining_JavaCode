@@ -52,11 +52,26 @@ public class JpaMainApplication {
         typedQuery.setParameter(studentParameter,8.0f);
         typedQuery.getResultList().stream()
                 .forEach(System.out::println);
-    //  finding out max rating result
+    //  finding out result based on ascending order of studentRating
         criteriaBuilder = entityManager.getCriteriaBuilder();
         studentCriteriaQuery = criteriaBuilder.createQuery(Student.class);
         studentRoot =  studentCriteriaQuery.from(Student.class);
-        typedQuery = entityManager.createQuery(studentCriteriaQuery);
+        studentCriteriaQuery.select(studentRoot)
+                .orderBy(criteriaBuilder.asc(studentRoot.get("studentRating")));
+        System.out.println("**************************************************");
+
+    // finding out max StudentRating Result
+//        criteriaBuilder = entityManager.getCriteriaBuilder();
+//        studentCriteriaQuery = criteriaBuilder.createQuery(Student.class);
+//        studentRoot =  studentCriteriaQuery.from(Student.class);
+//        studentCriteriaQuery.select(criteriaBuilder.max(studentRoot<Float>.get("studentRating")));
+       studentCriteriaQuery.select(studentRoot).where(criteriaBuilder.gt(studentRoot.get("studentRating"),8));
+       entityManager.createQuery(studentCriteriaQuery).getResultList().stream().forEach(System.out::println);
+
+       // projection using criteria
+       studentCriteriaQuery.multiselect(studentRoot.get("studentID"),studentRoot.get("studentName"));
+       entityManager.createQuery(studentCriteriaQuery).getResultList().stream()
+               .forEach(System.out::println);
 
     }
 }

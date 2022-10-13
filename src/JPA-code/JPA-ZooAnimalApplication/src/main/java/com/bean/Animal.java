@@ -9,7 +9,7 @@ public class Animal {
     private int animalID;
     private String animalName;
     private int animalAge;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.ALL ,fetch = FetchType.EAGER)
     private Zoo zoo;
 
     @Override

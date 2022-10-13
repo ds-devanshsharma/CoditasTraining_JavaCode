@@ -40,7 +40,7 @@ public class AnimalServiceImpl implements AnimalService{
             }
             try {
                 zoo.setAnimal(list);
-                entityManager.persist(zoo);
+//                entityManager.persist(zoo);
                 entityManager.getTransaction().commit();
                 System.out.println("ANIMAL ADDED SUCCESSFULLY !!");
             }catch (Exception e ){
@@ -56,14 +56,22 @@ public class AnimalServiceImpl implements AnimalService{
     }
 
     @Override
-    public void deleteAnimalFromZoo(Zoo zoo) throws IOException {
-        System.out.println("ANIMAL IN THIS Zoo : ");showAnimalInZoo(zoo);
-        System.out.println("ENTER ANIMAL-ID TO DELETE ANIMAL : ");
+    public void  deleteAnimalFromZoo(Zoo zoo) throws IOException {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.remove(entityManager.find(Animal.class,Integer.parseInt(reader.readLine())));
-        zoo.setAnimal(zoo.getAnimal());
+        System.out.println("ANIMAL IN THIS Zoo : ");showAnimalInZoo(zoo);
+        System.out.println("ENTER ANIMAL-ID TO DELETE ANIMAL : ");
+        animal =entityManager.find(Animal.class,Integer.parseInt(reader.readLine()));
+
+        List<Animal> animalList = zoo.getAnimal();
+        animalList.remove(animal);
+        entityManager.remove(animal);
+
+//        zoo.setAnimal(zoo.getAnimal());
+
+        entityManager.persist(zoo);
         entityManager.getTransaction().commit();
+        entityManager.close();
         System.out.println("ANIMAL DELETED SUCCESSFULLY !! ");
 
     }

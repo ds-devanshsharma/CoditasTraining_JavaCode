@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="698d7ef9-cb08-482d-93c6-35f3c1317b98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/java/com/RESTcarpassenger/RESTCarpassenger/JpaUtils/JpaEntityManagerFactoryProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/java/com/RESTcarpassenger/RESTCarpassenger/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/java/com/RESTcarpassenger/RESTCarpassenger/entities/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/java/com/RESTcarpassenger/RESTCarpassenger/entities/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/java/com/RESTcarpassenger/RESTCarpassenger/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/java/com/RESTcarpassenger/RESTCarpassenger/service/CarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST-Car-passenger/src/main/resources/META-INF/Persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/JPAutil/EntityManagerFactoryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/JPAutil/EntityManagerFactoryProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/main/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/AnimalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/AnimalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/ZooService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/ZooService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/ZooServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/src/main/java/com/service/ZooServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/main/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/main/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/AnimalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/AnimalService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/AnimalServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/AnimalServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/ZooService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/ZooService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/ZooServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA-code/JPA-ZooAnimalApplication/target/classes/com/service/ZooServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/HibernateUtils/SessionFactoryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/HibernateUtils/SessionFactoryProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/SpringApiBasicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/SpringApiBasicApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringSecurity/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/SpringSecurity/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/entities/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/entities/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/service/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/java/com/SpringAPIBasic/service/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringAPI-Basic/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringAPI-Basic/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Fz13XPiQecmOByi9ALPH00C0qT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="698d7ef9-cb08-482d-93c6-35f3c1317b98" name="Changes" comment="" />
+      <created>1665479900223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665479900223</updated>
+    </task>
+    <servers />
+  </component>
+</project>
