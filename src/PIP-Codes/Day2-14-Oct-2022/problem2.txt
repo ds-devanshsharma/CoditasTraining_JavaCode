@@ -2,7 +2,7 @@ Problem Statement :
 --------------------
 https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?isFullScreen=true
 
-Solution :
+Solution : 	TestCase : 19/20 
 --------------------
     public static String isValid(String s) {
     // Write your code here
