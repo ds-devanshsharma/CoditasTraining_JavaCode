@@ -1,0 +1,34 @@
+Problem Statement : 
+--------------------
+https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?isFullScreen=true
+
+Solution :
+--------------------
+    public static String isValid(String s) {
+    // Write your code here
+    Map<Character,Integer> map = new HashMap<>();
+    for(int index=0 ; index< s.length() ;index++ ){
+        if(!map.containsKey(s.charAt(index))){
+            map.put(s.charAt(index),1);
+        }else{
+            map.put(s.charAt(index),map.get(s.charAt(index))+1);
+        }
+    }
+    int count =0 ;
+    List<Integer> list = new ArrayList<>();
+    for(Map.Entry entry : map.entrySet()){
+        list.add((int)entry.getValue());
+    }
+    int difference =0 ;
+    int counter =0;
+    int check =list.get(0);
+    for(int i =1 ;i<list.size();i++){
+        if(list.get(i) !=check ){
+            count++;
+            if(Math.floorMod(list.get(i), check) >1) return "NO";
+        }
+    }
+    if(count >1) return "NO";
+    return "YES";
+    }
+}
