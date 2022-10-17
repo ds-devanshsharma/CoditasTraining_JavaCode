@@ -1,0 +1,28 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/insertionsort1/problem?isFullScreen=true
+--------------------------------------------------------------------------
+Solution : testCase Passed (4/4) | Success
+--------------------------------------------------------------------------
+     public static void insertionSort1(int n, List<Integer> arr) {
+    // Write your code here
+        int lastNumber = arr.get(arr.size()-1);
+        for(int i = arr.size()-2 ;i>=0 ;i--){
+             if(arr.get(i) > lastNumber){
+                 arr.set(i+1,arr.get(i));
+                 printArray(arr);
+             }
+             if(arr.get(i) < lastNumber){
+                 arr.set(i+1,lastNumber);
+                 break;
+             }
+        }
+        if(lastNumber < arr.get(0))
+            arr.set(0,lastNumber);    
+        printArray(arr);
+    }
+    public static void printArray(List<Integer> arr){
+        for(Integer item : arr )
+            System.out.print(item+" ");
+        System.out.println();
+    }
