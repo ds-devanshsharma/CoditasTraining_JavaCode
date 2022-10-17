@@ -1,0 +1,23 @@
+Problem Statement :
+-------------------
+You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. 
+They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
+
+Solution :
+-------------------
+    public static int birthdayCakeCandles(List<Integer> candles) {
+    // Write your code here
+        int max = tallestSizeOfCandle(candles);
+        int tallCandleCount =0;
+        for(Integer item : candles)
+            if(item == max) tallCandleCount ++;
+            
+        return tallCandleCount;
+    }
+    public static int tallestSizeOfCandle(List<Integer> candles){
+        int max =0 ;
+        for(Integer item : candles){
+            if(item >= max) max =item;
+        }
+        return max;
+    }

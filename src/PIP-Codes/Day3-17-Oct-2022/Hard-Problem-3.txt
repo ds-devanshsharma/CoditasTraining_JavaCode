@@ -1,0 +1,28 @@
+Problem Statement :
+level : hard 
+https://www.hackerrank.com/challenges/crush/problem?isFullScreen=true
+--------------------------------------------------------------------------
+Solution : testCase Passed (13/20) | TLE
+--------------------------------------------------------------------------
+public static long arrayManipulation(int n, List<List<Integer>> queries) {
+        // Write your code here
+        Long[] resArray = new Long[n+1];
+        Arrays.fill(resArray, 0l);
+        for(List<Integer> row : queries){
+            int beginIndex = row.get(0);
+            int endIndex = row.get(1);
+            long insertNumber = row.get(2);
+            while(beginIndex<= endIndex){
+                resArray[beginIndex] += insertNumber;
+                beginIndex++;
+            }
+        }
+        return maxInArrays(resArray);
+    }
+   public static long maxInArrays(Long[] array){
+       long max =0;
+       for(long item : array){
+           if(item >= max)max= item;
+       }
+       return (long)max;
+   }

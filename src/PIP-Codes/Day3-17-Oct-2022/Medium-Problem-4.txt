@@ -1,0 +1,25 @@
+Problem Statement :
+level : medium
+https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
+--------------------------------------------------------------------------
+Solution : testCase Passed (8/12) | TLE
+--------------------------------------------------------------------------
+    public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+    // Write your code here
+        List<Integer> playerRankBoard = new ArrayList<>();
+        Set<Integer> leaderBoard = new LinkedHashSet<>();
+        for(Integer item : ranked){
+            leaderBoard.add(item);
+        }
+        // System.out.println(leaderBoard);
+        for(Integer eachScore : player){
+            int rank =1;
+            Iterator iterator = leaderBoard.iterator();
+            while(iterator.hasNext()){
+                int leaderBoardScore = (Integer)iterator.next();
+                if( leaderBoardScore> eachScore) rank++;
+            }
+            playerRankBoard.add(rank);
+        }   
+        return playerRankBoard;
+    }
