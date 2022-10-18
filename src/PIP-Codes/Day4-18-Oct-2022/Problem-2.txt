@@ -1,0 +1,23 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/append-and-delete/problem?isFullScreen=false
+--------------------------------------------------------------------------
+Solution : testCase Passed (12/14) | two hidden cases failed
+--------------------------------------------------------------------------
+public static String appendAndDelete(String s, String t, int k) {
+    // Write your code here
+        int distrubIndex =0;
+        if(Math.abs(s.length()- t.length()) > k) return "No";
+        else if(s.equals(t)) return "Yes";
+        for(int i=0 ; i < Math.min(s.length(),t.length());i++){
+            if(s.charAt(i)!=t.charAt(i)){
+                 distrubIndex = (Math.min(s.length(),t.length())- (i))*2  ;
+                 System.out.println(distrubIndex);
+                 break;
+            }
+        }
+        if(distrubIndex  <= k) return "Yes";
+        return "No";    
+    }
+--------------------------------------------------------------------------
+learning : BigInteger class
