@@ -10,7 +10,13 @@ Reverse an array of integers.
 
     public static List<Integer> reverseArray(List<Integer> a) {
     // Write your code here
-        Collections.reverse(a);
+        int low =0 ;
+        int high = a.size()-1;
+        while(low <= high){
+            Integer temp = a.get(low);
+            a.set(low,a.get(high));
+            a.set(high,temp);
+            low++;high--;
+        }
         return a;
     }
-
