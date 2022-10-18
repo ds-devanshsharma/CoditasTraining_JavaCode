@@ -16,9 +16,10 @@ Solution : testCase Passed (4/4) | Success
                  arr.set(i+1,lastNumber);
                  break;
              }
+            if(i==0 && lastNumber < arr.get(i))
+                arr.set(i,lastNumber);
         }
-        if(lastNumber < arr.get(0))
-            arr.set(0,lastNumber);    
+    
         printArray(arr);
     }
     public static void printArray(List<Integer> arr){

@@ -1,6 +1,4 @@
-package com.bean;
 
-import com.bean.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,7 +7,8 @@ public class StudentApplication {
         try {
             ApplicationContext context = new ClassPathXmlApplicationContext("SpringBean.xml");
             Student student = (Student) context.getBean("obj");
-            System.out.println();
+            System.out.println(student.getName());
+            System.out.println(student.getName());
         }catch(Exception e)
         {
             System.out.println(e.getMessage());
