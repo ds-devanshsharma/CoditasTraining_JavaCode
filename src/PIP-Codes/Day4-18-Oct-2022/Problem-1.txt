@@ -1,0 +1,16 @@
+Problem Statement :
+level : medium
+https://www.hackerrank.com/challenges/extra-long-factorials/problem
+--------------------------------------------------------------------------
+Solution : testCase Passed (13/13) | Success
+--------------------------------------------------------------------------
+    public static void extraLongFactorials(int n) {
+    // Write your code here
+        BigInteger number =new BigInteger("1");
+        while(n >0){
+                number = number.multiply(BigInteger.valueOf(n--));
+        }
+        System.out.println(number);
+    }
+--------------------------------------------------------------------------
+learning : BigInteger class
