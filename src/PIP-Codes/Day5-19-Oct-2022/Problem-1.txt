@@ -1,0 +1,37 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/picking-numbers/problem
+--------------------------------------------------------------------------
+Solution : testCase Passed  | Success
+--------------------------------------------------------------------------
+    public static int pickingNumbers(List<Integer> a) {
+    // Write your code here
+        Collections.sort(a);
+        int result =0;
+        for(int i =0 ;i <a.size(); i++){
+            int count =1;
+            for(int  j= i+1 ;j<a.size() ;j++){
+                if(Math.abs(a.get(i)-a.get(j))<=1) count++;
+            }
+            result = Math.max(result ,count);
+        }
+        return result;
+    }
+--------------------------------------------------------------------------
+    // Write your code here
+        Collections.sort(a);
+        int result =0;
+        int check = a.get(0);
+        int count =1;
+        for(int i = 1; i < a.size(); i++){
+            if(Math.abs(check-a.get(i)) <=1){
+                count++;
+                result = Math.max(result, count);
+            }
+            else{
+                count =1;//count reset
+                check = a.get(i);//update check
+            }
+        }
+        return result ;
+    }
