@@ -1,0 +1,33 @@
+Problem Statement :
+level : medium
+https://www.hackerrank.com/challenges/encryption/problem?isFullScreen=true
+--------------------------------------------------------------------------
+Solution : testCase Passed  | Success
+--------------------------------------------------------------------------
+    public static String encryption(String s) {
+    // Write your code here
+        String resString = "";
+        int row =(int) Math.sqrt(s.length());
+        int col =(int)Math.ceil(Math.sqrt(s.length()));
+        if(row * col < s.length()) row++;
+        // System.out.println(row + " " +col);
+        char[][] matrix = new char[row][col];
+        int charIndex =0 ;
+        
+            for(int i=0 ;i<row ;i++){
+                for(int j=0; j<col;j++){
+                    if(charIndex<s.length())
+                        matrix[i][j] = s.charAt(charIndex);
+                    charIndex++; 
+                }
+            }
+
+            for(int i=0 ; i<col ;i++){
+                for(int j=0;j<row ;j++){
+                    if(matrix[j][i] != '\u0000') resString += matrix[j][i];
+                }
+                    if(i<col-1) resString +=" ";
+            }
+        return  resString;
+    }
+
