@@ -57,8 +57,14 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public void deleteCar(int carID) {
-
+    public String  deleteCar(int carID) throws SQLException {
+        preparedStatement = JdbcConnectionProvider.JdbcConnectionProviderMethod()
+                .prepareStatement("DELETE FROM CAR WHERE CAR_ID = ? ");
+        preparedStatement.setInt(1,carID);
+        if(preparedStatement.executeUpdate()>0) {
+          return "Record Deleted succcessfully !!";
+        }
+        return "SomeThing Went Wrong !!";
     }
 
     @Override

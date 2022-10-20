@@ -5,9 +5,7 @@ import com.bean.Employee;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
-
 import java.io.BufferedReader;
-import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.ResultSet;
@@ -15,8 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class DAOImplementation implements EmployeeDAO{
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +25,6 @@ public class DAOImplementation implements EmployeeDAO{
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }
-
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

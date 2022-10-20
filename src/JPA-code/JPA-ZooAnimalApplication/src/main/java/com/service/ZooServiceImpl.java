@@ -20,7 +20,6 @@ public class ZooServiceImpl implements ZooService{
     Zoo zoo;
     @Override
     public void addZoo(Zoo zoo) {
-
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
         entityManager.persist(zoo);

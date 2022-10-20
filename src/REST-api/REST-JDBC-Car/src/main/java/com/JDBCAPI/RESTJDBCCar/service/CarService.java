@@ -9,6 +9,6 @@ public interface CarService {
     void addCar(Car car) throws SQLException;
     Car viewCar(int carID) throws SQLException;
     List<Car> viewCarList() throws SQLException;
-    void deleteCar(int carID);
+    String  deleteCar(int carID) throws SQLException;
     void updateCar(int carID);
 }

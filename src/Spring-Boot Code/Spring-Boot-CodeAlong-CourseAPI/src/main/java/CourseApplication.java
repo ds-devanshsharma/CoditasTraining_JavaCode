@@ -1,2 +1,16 @@
-package PACKAGE_NAME;public class CourseApplication {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CourseApplication.class,args);
+        for (String s:
+             args) {
+            System.out.println("data "+args);
+        }
+        System.out.println("hello");
+    }
+
 }

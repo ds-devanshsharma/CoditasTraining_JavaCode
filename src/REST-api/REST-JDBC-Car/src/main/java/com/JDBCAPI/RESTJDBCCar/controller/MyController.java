@@ -22,8 +22,12 @@ public class MyController {
     List<Car> getCarListController() throws SQLException {
         return carService.viewCarList();
     }
-    @GetMapping("/viewCarByID/{}")
+    @GetMapping("/viewCarByID/{carId}")
     Car carById(@PathVariable int carId) throws SQLException {
         return carService.viewCar(carId);
+    }
+    @DeleteMapping("/deleteCar/{carId}")
+    String deleteCarByIdController(@PathVariable int carId) throws SQLException {
+        return carService.deleteCar(carId);
     }
 }

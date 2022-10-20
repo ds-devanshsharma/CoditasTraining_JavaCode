@@ -19,6 +19,7 @@ public class MainApplication {
         while(true){
             menu();
         }
+
     }
     public static void menu() throws IOException {
         System.out.println("Enter 1 for insert !\n" +
