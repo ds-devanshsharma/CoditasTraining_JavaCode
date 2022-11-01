@@ -1,0 +1,34 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/circular-array-rotation/problem?isFullScreen=false
+--------------------------------------------------------------------------
+Solution : testCase Passed  | Success
+--------------------------------------------------------------------------
+public static List<Integer> circularArrayRotation(List<Integer> a, int k,List<Integer> queries) {
+    // Write your code here
+    List<Integer> res= new ArrayList<>();
+        rotate(a, k);
+        for(Integer index : queries){
+            res.add(a.get(index));
+        }
+        return res;
+    }  
+    public static void rotate(List<Integer> nums, int k) {
+        k = k % nums.size();
+        rotateLogic(nums,0,nums.size()-1);
+        rotateLogic(nums,0,k-1);
+        rotateLogic(nums,k,nums.size()-1);
+       
+    }
+    public static void rotateLogic(List<Integer> array ,int beginIndex , int endIndex){
+        int start = beginIndex;
+        int end = endIndex;
+        while(start < end){
+            int temp = array.get(start);
+            array.set(start, array.get(end));
+            array.set(end,  temp);
+            start++;
+            end--;
+        }
+    }
+}
