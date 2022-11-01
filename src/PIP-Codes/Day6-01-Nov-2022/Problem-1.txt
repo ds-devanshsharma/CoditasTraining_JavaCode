@@ -1,0 +1,41 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true
+--------------------------------------------------------------------------
+Solution : testCase Passed  | Success
+--------------------------------------------------------------------------
+    public static int diagonalDifference(List<List<Integer>> arr) {
+    // Write your code here
+        int ans =0 ;
+        int lSum = 0;
+        int rSum = 0 ;
+        int size = arr.get(0).size();
+        for(int i=0;i< size ;i++){
+            for(int j=0 ;j<arr.get(i).size(); j++){
+                if(i==j) lSum +=arr.get(i).get(j);
+                if(i+j ==size-1){
+                     rSum+= arr.get(i).get(j);
+                    //  System.out.println(arr.get(i).get(j));
+                }
+            }
+        }
+        // System.out.println(lSum + " "+ rSum );
+        ans = Math.abs(lSum-rSum);
+        return ans;
+
+    }
+------------------------------------------------------------------------
+    public static int diagonalDifference(List<List<Integer>> arr) {
+    // Write your code here
+        int ans =0 ;
+        int lSum = 0;
+        int rSum = 0 ;
+        int size = arr.get(0).size();
+        for(int i=0 ; i< size ;i++){
+            lSum += arr.get(i).get(i);
+            rSum += arr.get(i).get(size-i-1);
+        }
+        // System.out.println(lSum + " "+ rSum );
+        ans = Math.abs(lSum-rSum);
+        return ans;
+    }
