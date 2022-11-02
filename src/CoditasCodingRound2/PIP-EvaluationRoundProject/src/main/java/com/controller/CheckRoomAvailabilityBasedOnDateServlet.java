@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.entities.Room;
 import com.service.UserRoomBookingServiceImpl;
 
 import javax.servlet.ServletException;
@@ -9,25 +10,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
-@WebServlet("/cancelRoomBookingServlet")
-public class CancelRoomBookingServlet extends HttpServlet {
-    PrintWriter out;
-    boolean status;
+@WebServlet("/checkRoomAvailabilityBasedOnDateServlet")
+public class CheckRoomAvailabilityBasedOnDateServlet extends HttpServlet {
+    PrintWriter out ;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         out = resp.getWriter();
-        status= new UserRoomBookingServiceImpl()
-                .cancelBooking(Integer.parseInt(req.getParameter("bookingId"))
-                        ,Integer.parseInt(req.getParameter("userId")));
-        if(status){
-            out.println("Room-Booking-cancelled Successfully !!");
+        List<Room> roomList = new UserRoomBookingServiceImpl().checkRoomAvailability(req.getParameter("checkDate&Time"));
+        if(roomList.size()> 0 ){
+            for(Room room : roomList) {
+                out.println("<h3>"+room.getRoomID() +"\t"+room.getRoomName()+" </h3><br>");
+            }
             req.getRequestDispatcher("Homepage.html").include(req,resp);
         }
         else{
-            out.println("That room not exist !!");
-            req.getRequestDispatcher("CancelBooking.html").include(req,resp);
+            out.println("No Room Available !! ");
+            req.getRequestDispatcher("Homepage.html").include(req,resp);
         }
     }
 }

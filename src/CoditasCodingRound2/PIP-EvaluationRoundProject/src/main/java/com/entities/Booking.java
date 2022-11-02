@@ -7,21 +7,21 @@ public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookingID;
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_user_id")
-    private User user;
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "room_room_id")
-    private Room room;
-    private String dateTime;
+    private int userID ;
 
-    public String getDateTime() {
-        return dateTime;
+    @Override
+    public String toString() {
+        return
+                "[ bookingID=" + bookingID +
+                ", userID=" + userID +
+                ", roomID=" + roomID +
+                ", startDateTime='" + startDateTime + '\'' +
+                ", endDateTime='" + endDateTime + " ]";
     }
 
-    public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
-    }
+    private int roomID ;
+    private String startDateTime;
+    private String endDateTime;
 
     public int getBookingID() {
         return bookingID;
@@ -30,19 +30,36 @@ public class Booking {
     public void setBookingID(int bookingID) {
         this.bookingID = bookingID;
     }
-    public Room getRoom() {
-        return room;
+
+    public int getUserID() {
+        return userID;
     }
 
-    public void setRoom(Room room) {
-        this.room = room;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
-    public User getUser() {
-        return user;
+    public int getRoomID() {
+        return roomID;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setRoomID(int roomID) {
+        this.roomID = roomID;
+    }
+
+    public String getStartDateTime() {
+        return startDateTime;
+    }
+
+    public void setStartDateTime(String startDateTime) {
+        this.startDateTime = startDateTime;
+    }
+
+    public String getEndDateTime() {
+        return endDateTime;
+    }
+
+    public void setEndDateTime(String endDateTime) {
+        this.endDateTime = endDateTime;
     }
 }

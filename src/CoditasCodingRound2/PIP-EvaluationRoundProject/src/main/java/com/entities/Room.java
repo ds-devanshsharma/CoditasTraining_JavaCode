@@ -7,9 +7,11 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int roomID;
+    @Column(unique = true)
     private String roomName;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "room",
+            cascade = CascadeType.REMOVE)
     private List<User> userList ;
 
     public int getRoomID() {

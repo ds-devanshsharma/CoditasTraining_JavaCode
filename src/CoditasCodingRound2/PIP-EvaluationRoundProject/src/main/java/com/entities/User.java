@@ -9,9 +9,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userID;
     private String userName;
-
-    @ManyToMany(cascade = CascadeType.ALL )
-    private List<Room> roomList;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Room room;
 
     public int getUserID() {
         return userID;
@@ -29,11 +28,11 @@ public class User {
         this.userName = userName;
     }
 
-    public List<Room> getRoomList() {
-        return roomList;
+    public Room getRoom() {
+        return room;
     }
 
-    public void setRoomList(List<Room> roomList) {
-        this.roomList = roomList;
+    public void setRoom(Room room) {
+        this.room = room;
     }
 }

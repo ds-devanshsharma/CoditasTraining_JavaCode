@@ -1,0 +1,22 @@
+Problem Statement :
+level : Medium
+https://www.hackerrank.com/challenges/x-and-his-shots/problem?isFullScreen=false
+--------------------------------------------------------------------------
+Solution :  50% testCase Passed  | Success
+--------------------------------------------------------------------------
+    public static int solve(List<List<Integer>> shots, List<List<Integer>> players) {
+    // Write your code here
+        int result =0 ;
+        for(List<Integer> player : players){
+            int count =0 ;
+            for(List<Integer> shot : shots ){
+                if(player.get(0) <= shot.get(1) && player.get(1) >= shot.get(0) || 
+                player.get(1) >= shot.get(0) && player.get(1) <= shot.get(1)){
+                     count ++;
+                    //  System.out.println("1");
+                }
+            }
+            result  += count;
+        }
+        return result;
+    }

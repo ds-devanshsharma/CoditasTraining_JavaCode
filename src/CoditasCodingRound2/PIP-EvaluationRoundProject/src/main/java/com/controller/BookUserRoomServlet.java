@@ -16,24 +16,28 @@ import java.io.PrintWriter;
 public class BookUserRoomServlet extends HttpServlet {
     Booking booking ;
     PrintWriter out ;
-    boolean status;
+    int status;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         out = resp.getWriter();
-
-        status = new UserRoomBookingServiceImpl().addBooking(
-                Integer.parseInt(req.getParameter("userId")),
-                Integer.parseInt(req.getParameter("roomId")),
-                req.getParameter("dateTime")
-        );
-        if(status){
+        booking = new Booking();
+        int userId = Integer.parseInt(req.getParameter("userId"));
+        int roomId = Integer.parseInt(req.getParameter("roomId"));
+        booking.setStartDateTime(req.getParameter("startDate&Time"));
+        booking.setEndDateTime(req.getParameter("endDate&Time"));
+        status = new UserRoomBookingServiceImpl().addBooking(userId,roomId,booking);
+        if(status == 1 ) {
             out.println("Room Booked for Conference Successfully !! ");
             req.getRequestDispatcher("Homepage.html").include(req,resp);
         }
-        else{
+        else if(status ==0 ){
             out.println("SomeThing Went Wrong Either userID or roomID not found !!");
+            req.getRequestDispatcher("Homepage.html").include(req,resp);
+        }else{
+            out.println("That room is already booked for that Slot !! " +
+                    "<br > Try Again !!");
             req.getRequestDispatcher("Homepage.html").include(req,resp);
         }
     }

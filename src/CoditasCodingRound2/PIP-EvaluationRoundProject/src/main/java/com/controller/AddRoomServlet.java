@@ -16,7 +16,7 @@ import java.io.PrintWriter;
 public class AddRoomServlet extends HttpServlet {
     Room room ;
     PrintWriter out ;
-    boolean status;
+    int  status;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
@@ -24,13 +24,18 @@ public class AddRoomServlet extends HttpServlet {
         room = new Room();
         room.setRoomName(req.getParameter("roomName"));
         status = new UserRoomBookingServiceImpl().addRoom(room);
-        if(status){
+        if(status == 1){
             out.println("Room Added Successfully !");
             req.getRequestDispatcher("Homepage.html").include(req,resp);
+        }
+        else if(status == -1){
+            out.println("That Room Name Already Exist in Our Records !!");
+            req.getRequestDispatcher("AddRoom.html").include(req,resp);
         }
         else{
             out.println("SomeThing Went Wrong !!");
             req.getRequestDispatcher("AddRoom.html").include(req,resp);
         }
+
     }
 }
