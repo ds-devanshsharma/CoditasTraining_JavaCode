@@ -1,1 +1,0 @@
-insert into Course(courseId,courseName) values(100 , 'HIbernate-With-JPA');
