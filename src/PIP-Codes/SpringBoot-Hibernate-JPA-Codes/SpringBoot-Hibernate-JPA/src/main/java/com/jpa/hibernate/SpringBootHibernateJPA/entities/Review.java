@@ -1,9 +1,5 @@
 package com.jpa.hibernate.SpringBootHibernateJPA.entities;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Review {
@@ -14,14 +10,24 @@ public class Review {
      private String rating;
      private String description;
 
+    @Override
+    public String toString() {
+        return "Review{" +
+                "reviewId=" + reviewId +
+                ", rating='" + rating + '\'' +
+                ", description='" + description + '\'' +
+                ", course=" + course +
+                '}';
+    }
+    @ManyToOne
+     private Course course;
+
     public int getReviewId() {
         return reviewId;
     }
-
     public void setReviewId(int reviewId) {
         this.reviewId = reviewId;
     }
-
     public String getRating() {
         return rating;
     }
@@ -36,5 +42,13 @@ public class Review {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
     }
 }

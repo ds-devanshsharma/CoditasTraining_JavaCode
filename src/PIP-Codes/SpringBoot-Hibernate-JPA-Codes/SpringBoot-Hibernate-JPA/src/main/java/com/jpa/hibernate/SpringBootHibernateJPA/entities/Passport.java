@@ -25,6 +25,14 @@ public class Passport {
         return passportNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Passport{" +
+                "passportId=" + passportId +
+                ", passportNumber='" + passportNumber + '\'' +
+                '}';
+    }
+
     public void setPassportNumber(String passportNumber) {
         this.passportNumber = passportNumber;
     }
