@@ -1,14 +1,16 @@
 package com.devansh.student.service;
 
 import com.devansh.student.entities.Student;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
 public interface StudentService {
-    public Student addStudent(Student student);
-    public List<Student> getStudents();
+    ResponseEntity addStudent(Student student);
+    ResponseEntity getStudents();
 
-    boolean deleteStudent(int studentId);
+    ResponseEntity deleteStudent(int studentId);
 
-    Student updateStudent(Student student);
+    ResponseEntity updateStudent(Student student);
+    ResponseEntity assignTeacherToStudent(int studentId ,int teacherId);
 }

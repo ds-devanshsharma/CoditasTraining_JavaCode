@@ -11,9 +11,9 @@ import java.util.List;
 public class Course {
     @Id
     @GeneratedValue
-    private Long courseId ;
+    private int courseId ;
     private String courseName;
     @ManyToMany(cascade = CascadeType.PERSIST ,
     mappedBy = "courses")
-    private List<Student> students;
+    private List<Student> students = new ArrayList<>();
 }

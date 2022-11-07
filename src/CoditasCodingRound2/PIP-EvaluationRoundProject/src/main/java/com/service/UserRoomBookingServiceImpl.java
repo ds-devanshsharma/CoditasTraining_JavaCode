@@ -132,17 +132,13 @@ public class UserRoomBookingServiceImpl implements UserRoomBookingService{
     public List<Room> checkRoomAvailability(String checkDateTime) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        List<Room> allRoomList = session.createQuery("from Room ").list();
-        Query query = session.createQuery(" from Booking where startDateTime <=: check " +
-                "and endDateTime >= :check");
-        query.setParameter("check",checkDateTime);
-        List<Booking> bookingList =query.list();
-        List<Integer> bookedRoomIdList = bookingList.stream().map(booking1 -> booking1.getRoomID()).collect(Collectors.toList());
 
-        List<Room> availableRoomList = new ArrayList<>();
-        for(Room room : allRoomList){
-            if(!bookedRoomIdList.contains(room.getRoomID())) availableRoomList.add(room);
-        }
+        Query query = session.createQuery("from Room Left outer Join Booking" +
+                " on Room.roomID = Booking.roomID where Room.roomID not in " +
+                " (select Booking.roomID from Room inner Join Booking on Room.roomID = Booking.roomID " +
+                " where startDateTime <=: check and endDateTime >= :check)");
+        query.setParameter("check",checkDateTime);
+        List<Room> availableRoomList = query.list();
         System.out.println(availableRoomList);
         return availableRoomList;
     }
