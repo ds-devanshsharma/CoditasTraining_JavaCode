@@ -1,0 +1,30 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/strong-password/problem
+--------------------------------------------------------------------------
+Solution :  79/90 testCase Passed  |
+--------------------------------------------------------------------------    public static int minimumNumber(int n, String password) {
+    // Return the minimum number of characters to make the password strong
+        // CharSequence numbers = "0123456789";
+        // CharSequence lower_case = "abcdefghijklmnopqrstuvwxyz";
+        // CharSequence upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        // String  special_characters = "!@#$%^&*()-+";
+        int count =0 ;
+        boolean lower =false ,upper = false ,number =false ,special =false;
+        for(int i=0 ;i<password.length() ;i++){
+            if(password.charAt(i)>='a' && password.charAt(i)<='z')
+                lower =true;
+            else if(password.charAt(i)>='A' && password.charAt(i)<='Z')
+                upper =true;
+            else if(password.charAt(i)>=0 && password.charAt(i)<=9)
+                number = true;
+            else
+                special = true;
+        }
+        if(!special) count++;
+        if(!upper)count++;
+        if(!lower)count++;
+        if(!number)count++;
+        if(count+n<6) return 6-n;
+        return count;   
+    }
