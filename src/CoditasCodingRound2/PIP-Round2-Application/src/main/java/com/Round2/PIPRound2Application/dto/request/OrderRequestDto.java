@@ -7,6 +7,6 @@ import java.util.Map;
 
 @Data
 public class OrderRequestDto {
-    private int tableNumber;
-    private Map<Long, Integer> serialNumberOfItemAndQuantity= new HashMap<>();
+    private int tableId;
+    private Map<Integer, Integer> itemIdAndQuantity= new HashMap<>();
 }

@@ -24,6 +24,6 @@ public class BookingEntity {
     @JoinColumn(name = "tableEntity")
     private TableEntity table;
 
-    @OneToMany(mappedBy = "booking" )
+    @OneToMany(mappedBy = "booking" ,cascade = CascadeType.ALL)
     private List<OrderEntity> orders;
 }

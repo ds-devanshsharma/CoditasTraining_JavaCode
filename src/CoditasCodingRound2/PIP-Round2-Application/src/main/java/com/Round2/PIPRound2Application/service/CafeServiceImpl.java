@@ -2,7 +2,6 @@ package com.Round2.PIPRound2Application.service;
 
 
 import com.Round2.PIPRound2Application.dto.request.OrderRequestDto;
-import com.Round2.PIPRound2Application.dto.request.PlaceOrder;
 import com.Round2.PIPRound2Application.entities.*;
 import com.Round2.PIPRound2Application.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +26,9 @@ public class CafeServiceImpl implements CafeService{
     OrderRepository orderRepository;
     @Autowired
     BookingRepository bookingRepository;
+    @Autowired
+    ItemAndQuantityPerOrderRepository itemAndQuantityPerOrderRepository;
+
 
     @Override
     @Transactional
@@ -56,28 +58,24 @@ public class CafeServiceImpl implements CafeService{
     }
 
     @Override
-    public OrderEntity placeOrder(OrderRequestDto orderRequestDto) {
-        OrderEntity savedOrder = null;
-        TableEntity table = tableRepository.findById(orderRequestDto.getTableNumber()).orElse(null);
-        if(table != null) {
-            if(table.getBooking().getOrders().size()>0){
-                savedOrder =
-            }else {
-                savedOrder = new OrderEntity();
-            }
-         //now saved
-         savedOrder = orderRepository.save(savedOrder);
-         savedOrder.setBooking(table.getBooking());
+    @Transactional
+    public OrderEntity placeOrder(OrderRequestDto orderDto) {
+        OrderEntity order = null;
+        TableEntity orderAtTable = tableRepository.findById(orderDto.getTableId()).get();
+//        orderAtTable.getBooking().
+        order = new OrderEntity();
+        order.setBooking(orderAtTable.getBooking());
+        OrderEntity savedOrder = orderRepository.save(order);
 
-         List<OrderPerItemMenu> orderPerItemMenuList = orderRequestDto.getSerialNumberOfItemAndQuantity()
-                 .entrySet().stream()
-                 .map(itemAndQuantity-> new OrderPerItemMenu(
-                         itemAndQuantity.getValue(),
-                         menuRepository.findById(Math.toIntExact(itemAndQuantity.getKey())).orElse(null),
-                         savedOrder)).collect(Collectors.toList());
+        OrderPerItemMenu order1 = new OrderPerItemMenu();
+        order1.setItemQuantity(orderDto.getItemIdAndQuantity().get(orderDto.getItemIdAndQuantity()
+                .entrySet().iterator().next().getValue()));
+        MenuEntity item1 = menuRepository.findById(orderDto.getItemIdAndQuantity()
+                .entrySet().iterator().next().getKey()).get();
+        order1.setMenu(item1);
+        itemAndQuantityPerOrderRepository.save(order1);
+        return orderRepository.save(savedOrder);
 
-        }else{
-            return null;
-        }
     }
 }
+

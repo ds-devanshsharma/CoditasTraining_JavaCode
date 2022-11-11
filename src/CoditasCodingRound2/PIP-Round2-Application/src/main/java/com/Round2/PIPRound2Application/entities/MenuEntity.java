@@ -12,8 +12,9 @@ import java.util.List;
 public class MenuEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int  serialId;
-    @Column(nullable = false)
+    @Column(name = "itemId")
+    private int  itemId;
+    @Column(nullable = false,name = "itemPrice")
     private double price;
     @Column(nullable = false ,name = "itemName")
     private String itemName;
