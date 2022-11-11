@@ -1,0 +1,30 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/reduced-string/problem
+--------------------------------------------------------------------------
+Solution :   testCase Passed  |
+--------------------------------------------------------------------------   
+    public static String superReducedString(String s) {
+    // Write your code here
+        Stack<Character> characters = new Stack<>();
+        for(int i=0; i<s.length() ;i++){
+            char temp = s.charAt(i);
+            if(characters.isEmpty()){
+                characters.push(temp);
+            }
+            else if(characters.peek() == temp){
+                characters.pop();
+            }
+            else{
+                characters.push(temp);
+            }
+        }
+        System.out.println(characters);
+        StringBuilder resString =new StringBuilder();
+        for(Character item : characters)
+            resString.append(item);
+            // System.out.println(item);
+        // System.out.println(resString);    
+        if(resString.length()==0) return "Empty String";
+        return resString.toString();
+    }
