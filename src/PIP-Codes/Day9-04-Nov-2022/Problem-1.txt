@@ -1,0 +1,31 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/weighted-uniform-string/problem?isFullScreen=false
+--------------------------------------------------------------------------
+Solution :  all testCase Passed  | Success
+--------------------------------------------------------------------------
+    public static List<String> weightedUniformStrings(String s, List<Integer> queries) {
+    // Write your code here
+        List<Integer> indexWiseSum = new ArrayList<>();
+        List<String> result = new ArrayList<>();
+        int count = 1 ;
+        char prev = s.charAt(0);
+        indexWiseSum.add(s.charAt(0)-'a'+1);
+        for(int  i=1;i <s.length() ;i++){
+            char curr = s.charAt(i);
+            if(curr==prev){
+                count++;
+                indexWiseSum.add((curr-'a'+1)*count);
+            }
+            else{
+                count =1 ;
+                prev = curr;
+                indexWiseSum.add((curr-'a'+1)*count);
+            }    
+        }
+        for(Integer item : queries){
+            if(indexWiseSum.contains(item))result.add("Yes");
+            else result.add("No");
+        }
+        return result;
+    }
