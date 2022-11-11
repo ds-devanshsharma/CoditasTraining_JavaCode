@@ -1,11 +1,14 @@
 package com.Springboot.StudentCoureReviewApplication.controller;
 
+import com.Springboot.StudentCoureReviewApplication.dto.request.UpdateStudentDto;
 import com.Springboot.StudentCoureReviewApplication.entities.StudentEntity;
 import com.Springboot.StudentCoureReviewApplication.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -15,14 +18,18 @@ public class StudentController {
     StudentService studentService;
     @PostMapping("/register")
     ResponseEntity registerStudentController(@RequestBody StudentEntity student){
+        HashMap map = new HashMap();
         try {
+
             StudentEntity studentEntity = studentService.registerStudent(student);
-            if (studentEntity != null)
-                return new ResponseEntity(studentEntity, HttpStatus.CREATED);
-            else return new ResponseEntity("Student not registered !", HttpStatus.NOT_ACCEPTABLE);
+            if (studentEntity != null) {
+                map.put("Student Registered ! ", studentEntity);
+                return new ResponseEntity(map, HttpStatus.CREATED);
+            }else
+                return new ResponseEntity("Student not registered !", HttpStatus.NOT_ACCEPTABLE);
         }
         catch (Exception e){
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity("Some Error Occurred !",HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -52,9 +59,9 @@ public class StudentController {
     }
 
     @PutMapping("/update")
-    ResponseEntity updateStudentController(@RequestBody StudentEntity student){
+    ResponseEntity updateStudentController(@RequestBody UpdateStudentDto updateStudent){
         try{
-            StudentEntity updated = studentService.updateStudent(student);
+            StudentEntity updated = studentService.updateStudent(updateStudent);
             if(updated !=null)
                 return new ResponseEntity(updated,HttpStatus.ACCEPTED);
             else
@@ -65,14 +72,20 @@ public class StudentController {
         }
     }
 
-    @PutMapping("/buyCourse/{studentId}/{CourseId}")
+    @PutMapping("/buyCourse/{studentId}/{courseId}")
     ResponseEntity buyCourseController(@PathVariable Long studentId ,@PathVariable Long courseId){
         try{
-            if(studentService.buyCourses(studentId,courseId))
-                return new ResponseEntity("Course assigned !!" ,HttpStatus.OK);
+            int status = studentService.buyCourses(studentId,courseId);
+            if(status == 0 )
+                return new ResponseEntity("Course not Found !",HttpStatus.NOT_FOUND);
+            else if(status == 11)
+                return new ResponseEntity("YOU HAVE ALREADY TAKEN THIS COURSE !",HttpStatus.NOT_ACCEPTABLE);
+            else if(status == 2)
+                return new ResponseEntity("STUDENT NOT FOUND !",HttpStatus.NOT_FOUND);
             else
-                return new ResponseEntity("Course OR Student not Found !",HttpStatus.NOT_FOUND);
+                return new ResponseEntity("COURSE ASSIGNED !",HttpStatus.OK);
         }catch(Exception e){
+            e.printStackTrace();
             return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 

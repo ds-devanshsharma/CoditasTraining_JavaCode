@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+
 public interface CourseService {
     CourseEntity registerCourse(CourseEntity Course);
     CourseEntity updateCourse(CourseEntity Course);

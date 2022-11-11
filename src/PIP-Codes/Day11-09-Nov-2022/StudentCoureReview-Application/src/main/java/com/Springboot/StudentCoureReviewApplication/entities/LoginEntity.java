@@ -12,9 +12,9 @@ import javax.persistence.Table;
 @Table(name = "Login_info_table")
 public class LoginEntity {
     @Id
-    @Column(name = "username")
+    @Column(name = "username" , unique = true)
     private String loginEmail;
-    @Column(nullable = false ,name = "password")
+    @Column(nullable = false ,name = "password" ,unique = true)
     private String loginPassword;
     @Column(nullable = false ,name = "role")
     private String loginRole;

@@ -4,9 +4,10 @@ import com.Springboot.StudentCoureReviewApplication.entities.CourseEntity;
 import com.Springboot.StudentCoureReviewApplication.repository.CourseRepository;
 import com.Springboot.StudentCoureReviewApplication.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class CourseServiceImpl implements CourseService {
     @Autowired
     CourseRepository CourseRepository;

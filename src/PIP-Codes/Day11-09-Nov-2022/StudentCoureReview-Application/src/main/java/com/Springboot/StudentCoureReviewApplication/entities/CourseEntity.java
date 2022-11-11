@@ -1,5 +1,6 @@
 package com.Springboot.StudentCoureReviewApplication.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import java.util.List;
 import javax.persistence.*;
@@ -17,11 +18,13 @@ public class CourseEntity {
     @Column(nullable = false,name = "CoursePrice")
     private Double coursePrice;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "Student_Course_table",
-            joinColumns = @JoinColumn(name = "studentId"),
-            inverseJoinColumns = @JoinColumn(name = "courseId"))
+            joinColumns = @JoinColumn(name = "courseId"),
+            inverseJoinColumns = @JoinColumn(name = "studentId"))
     private List<StudentEntity> studentList ;
-    @OneToMany(mappedBy = "course")
+
+    @OneToMany(mappedBy = "course" ,fetch = FetchType.LAZY)
     private List<ReviewEntity> reviewList ;
 }

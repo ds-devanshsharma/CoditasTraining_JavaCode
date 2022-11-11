@@ -1,5 +1,6 @@
 package com.Springboot.StudentCoureReviewApplication.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -21,8 +22,10 @@ public class StudentEntity {
     @Column(nullable = false,unique = true,name = "studentEmail")
     private String studentEmail;
 
-    @ManyToMany(mappedBy = "studentList")
+    @ManyToMany(mappedBy = "studentList" , cascade = CascadeType.ALL,
+    fetch = FetchType.LAZY)
     private List<CourseEntity> courseList =new ArrayList<>();
+
 
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     private List<ReviewEntity> reviewList= new ArrayList<>();

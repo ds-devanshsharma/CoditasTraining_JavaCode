@@ -1,0 +1,50 @@
+Problem Statement :
+level : easy
+https://www.hackerrank.com/challenges/richie-rich/problem?isFullScreen=true
+--------------------------------------------------------------------------
+Solution :  11/31 testCase Passed  |
+--------------------------------------------------------------------------    public static int minimumNumber(int n, String password) {
+
+-------------------------------------------------------------------------------------
+    public static String highestValuePalindrome(String s, int n, int k) {
+    // Write your code here
+        int i=0;
+        int j=n-1;
+        int differences =0;
+        char[] characters = s.toCharArray();
+        
+        while(i<j){
+            if(characters[i]!= characters[j])
+                differences++;
+            i++;
+            j--;
+        }
+        if(differences > k)return "-1";
+        if(s.length()==1 && k>0 )return "9";
+        
+        int startIndex =(n-1)/2;
+        int endIndex = startIndex + 1;
+        // System.out.println(startIndex + " "+ endIndex);
+        while((startIndex>=0 && endIndex<=n-1) && k>0){
+            if(characters[startIndex]!=characters[endIndex]){
+                if(characters[startIndex]-'0'>characters[endIndex]-'0'){
+                    characters[endIndex] = characters[startIndex];
+                    k--;
+                }
+                else{
+                    characters[startIndex] = characters[endIndex];
+                    k--;
+                }
+            }
+            startIndex--;
+            endIndex++;
+            if(startIndex ==0 && endIndex==n-1 && k>1){
+                characters[startIndex] = '9';
+                characters[endIndex] = '9';
+                k=k-2;
+            }
+        }
+
+        System.out.println(Arrays.toString(characters));
+        return String.valueOf(characters);
+    }

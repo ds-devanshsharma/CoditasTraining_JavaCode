@@ -1,6 +1,8 @@
 package com.Springboot.CarPreBookingApplication.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 
@@ -19,9 +21,13 @@ public class Car {
     @Column(name = "carPrice" ,nullable = false)
     private Double carPrice ;
 
-    @Column(name = "carStatus" , nullable = false)
+    @Column(name = "carStatus" , nullable = false )
     private boolean carStatus;
 
+    @JsonIgnore
     @OneToOne(mappedBy = "car")
     private CarBooking booking;
+
+    @OneToOne
+    private CarSeller carSeller;
 }

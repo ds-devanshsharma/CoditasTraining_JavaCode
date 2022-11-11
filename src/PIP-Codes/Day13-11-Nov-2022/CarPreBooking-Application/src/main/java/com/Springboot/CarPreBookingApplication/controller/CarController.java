@@ -1,8 +1,10 @@
 package com.Springboot.CarPreBookingApplication.controller;
 
+import com.Springboot.CarPreBookingApplication.dto.requestDto.AddCarDto;
 import com.Springboot.CarPreBookingApplication.dto.requestDto.BookCarDto;
 import com.Springboot.CarPreBookingApplication.dto.requestDto.CarModelDto;
 import com.Springboot.CarPreBookingApplication.dto.requestDto.CarPriceDto;
+import com.Springboot.CarPreBookingApplication.dto.requestDto.RegisterCarDto;
 import com.Springboot.CarPreBookingApplication.entities.Car;
 import com.Springboot.CarPreBookingApplication.entities.CarBooking;
 import com.Springboot.CarPreBookingApplication.service.CarService;
@@ -19,6 +21,17 @@ import java.util.Optional;
 public class CarController {
     @Autowired
     CarService carService ;
+
+    @PostMapping("/addCar")
+    ResponseEntity addCarToStoreController(@RequestBody AddCarDto){
+        try{
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
     @GetMapping("/getCarModels")
     ResponseEntity getCarBasedOnModelController(@RequestBody CarModelDto modelDto){

@@ -1,5 +1,6 @@
 package com.Springboot.CarPreBookingApplication.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -20,7 +21,10 @@ public class CarBooking {
     @JoinColumn(name = "car_id")
     private Car car ;
 
+    @JsonIgnore
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "customer_id")
     private Customer customer;
+
+
 }
