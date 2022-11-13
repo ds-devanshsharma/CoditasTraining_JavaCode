@@ -28,7 +28,7 @@ public class AuthenticationServiceImpl implements AuthenticationService{
     public int login(LoginDto loginDto) {
         LoginEntity login = authenticationRepository.findById(loginDto.getUsername()).orElse(null);
         if(login == null)return 1;
-        else if (!login.getLoginPassword().equalsIgnoreCase(loginDto.getLoginPassword())) return 2;
+        else if (!login.getLoginPassword().equals(loginDto.getLoginPassword())) return 2;
         else if(login.getLoginRole().equalsIgnoreCase("admin")) return 3;
         else return 4;
     }

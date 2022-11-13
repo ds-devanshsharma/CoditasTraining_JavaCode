@@ -7,6 +7,8 @@ import javax.persistence.Id;
 
 @Data
 public class SignUpDto {
+    private String studentName;
+    private String studentCity;
     private String loginEmail;
     private String loginPassword;
     private String loginRole;

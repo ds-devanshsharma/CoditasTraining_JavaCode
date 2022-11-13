@@ -1,5 +1,6 @@
 package com.Springboot.StudentCoureReviewApplication.controller;
 
+import com.Springboot.StudentCoureReviewApplication.dto.request.SignUpDto;
 import com.Springboot.StudentCoureReviewApplication.dto.request.UpdateStudentDto;
 import com.Springboot.StudentCoureReviewApplication.entities.StudentEntity;
 import com.Springboot.StudentCoureReviewApplication.service.StudentService;
@@ -7,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.HashMap;
 import java.util.List;
 
@@ -16,8 +16,9 @@ import java.util.List;
 public class StudentController {
     @Autowired
     StudentService studentService;
+
     @PostMapping("/register")
-    ResponseEntity registerStudentController(@RequestBody StudentEntity student){
+    ResponseEntity registerStudentController(@RequestBody SignUpDto student){
         HashMap map = new HashMap();
         try {
 

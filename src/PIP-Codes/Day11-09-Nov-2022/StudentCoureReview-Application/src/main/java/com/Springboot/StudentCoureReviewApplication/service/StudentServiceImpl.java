@@ -1,8 +1,11 @@
 package com.Springboot.StudentCoureReviewApplication.service;
 
+import com.Springboot.StudentCoureReviewApplication.dto.request.SignUpDto;
 import com.Springboot.StudentCoureReviewApplication.dto.request.UpdateStudentDto;
 import com.Springboot.StudentCoureReviewApplication.entities.CourseEntity;
+import com.Springboot.StudentCoureReviewApplication.entities.LoginEntity;
 import com.Springboot.StudentCoureReviewApplication.entities.StudentEntity;
+import com.Springboot.StudentCoureReviewApplication.repository.AuthenticationRepository;
 import com.Springboot.StudentCoureReviewApplication.repository.CourseRepository;
 import com.Springboot.StudentCoureReviewApplication.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +20,24 @@ public class StudentServiceImpl implements StudentService{
     @Autowired
     CourseRepository courseRepository;
 
+    @Autowired
+    AuthenticationRepository authenticationRepository;
+
     @Override
-    public StudentEntity registerStudent(StudentEntity student) {
-        return studentRepository.save(student);
+    public StudentEntity registerStudent(SignUpDto student) {
+        LoginEntity loginData = new LoginEntity();
+        //setting data into login-info
+        loginData.setLoginEmail(student.getLoginEmail());
+        loginData.setLoginRole(student.getLoginRole());
+        loginData.setLoginPassword(student.getLoginPassword());
+        authenticationRepository.save(loginData);
+
+        //setting data into
+        StudentEntity student1 = new StudentEntity();
+        student1.setStudentName(student.getStudentName());
+        student1.setStudentCity(student.getStudentCity());
+        student1.setStudentEmail(student.getLoginEmail());
+        return studentRepository.save(student1);
     }
 
     @Override
@@ -29,6 +47,7 @@ public class StudentServiceImpl implements StudentService{
             updateStudent.setStudentCity(student.getStudentCity());
             updateStudent.setStudentName(student.getStudentName());
             updateStudent.setStudentEmail(student.getStudentEmail());
+
             return studentRepository.save(updateStudent);
         }
         return null;
