@@ -7,10 +7,10 @@ import java.util.HashMap;
 
 @Service
 public class PlayerServiceImpl implements PlayerService{
-    static int player1Hp =100 ;
-    static int player2Hp =100 ;
-    static int player1_x =0;
-    static int player1_y =0;
+    static int player1Hp = 100 ;
+    static int player2Hp = 100 ;
+    static int player1_x = 0;
+    static int player1_y = 0;
 
     static int player2_x =1;
     static int player2_y =1;
@@ -84,7 +84,9 @@ public class PlayerServiceImpl implements PlayerService{
     }
 
     @Override
-    public int fireWeapon(FireDto fireDto ,int playerNumber) {
+    public int
+
+    fireWeapon(FireDto fireDto ,int playerNumber) {
         if(playerNumber ==1 ){
             if(fireDto.getX()==player2_x && fireDto.getY()==player2_y){
                 // returning 11 means player 1 won

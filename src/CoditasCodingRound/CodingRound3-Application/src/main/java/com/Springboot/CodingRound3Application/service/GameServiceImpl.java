@@ -45,4 +45,9 @@ public class GameServiceImpl implements GameService{
         //game not created
         return 0;
     }
+
+    @Override
+    public boolean startGame(Long gameId) {
+        return false;
+    }
 }

@@ -77,7 +77,7 @@ public class PlayerController {
     }
 
     @GetMapping("fire/{playerNumber}")
-    ResponseEntity fireWeaponController(@RequestBody FireDto fireDto ,@PathVariable int playerNumber){
+    ResponseEntity fireWeaponController(@RequestBody FireDto fireDto ,@PathVariable int playerNumber)  {
         try{
             int status = playerService.fireWeapon(fireDto , playerNumber);
             if(status == 1)

@@ -12,6 +12,11 @@ public class LeaderBoard {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long entryId;
 
+    @Column(name = "Points")
+    private Long score ;
     @OneToOne
     private Game game ;
+
+    @OneToOne
+    private Player winner;
 }

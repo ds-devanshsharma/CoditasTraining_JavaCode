@@ -8,4 +8,7 @@ public interface GameService {
     Player registerPlayer(AddPlayerDto addPlayerDto);
 
     int createGame(Long playerId1, Long playerId2);
+
+    boolean startGame(Long gameId);
+
 }

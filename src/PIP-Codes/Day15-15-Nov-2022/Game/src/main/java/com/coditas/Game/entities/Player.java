@@ -1,6 +1,7 @@
-package com.Springboot.CodingRound3Application.entities;
+package com.coditas.Game.entities;
 
 import lombok.Data;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 
@@ -8,16 +9,11 @@ import javax.persistence.*;
 @Data
 @Table(name = "Player_table")
 public class Player {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long playerId;
-
-    @Column(nullable = false , unique = true ,
-    name = "name")
     private String playerName;
 
-    @Column
-    private int player_x;
-
+    @ColumnDefault("false")
+    private boolean playerStatus;
 }
