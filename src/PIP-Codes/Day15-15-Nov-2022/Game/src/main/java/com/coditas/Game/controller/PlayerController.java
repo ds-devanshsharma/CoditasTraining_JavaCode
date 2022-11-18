@@ -1,7 +1,7 @@
-package com.Springboot.CodingRound3Application.controller;
+package com.coditas.Game.controller;
 
-import com.Springboot.CodingRound3Application.dto.request.FireDto;
-import com.Springboot.CodingRound3Application.service.PlayerService;
+import com.coditas.Game.model.request.FireDto;
+import com.coditas.Game.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping("player")
+@RequestMapping("/player")
 public class PlayerController {
 
     @Autowired
     PlayerService playerService;
 
-    @GetMapping("/forward/{player}")
-    ResponseEntity moveForwardController(@PathVariable int playerNumber){
+    @GetMapping("/forward/{gameId}/{playerId}")
+    ResponseEntity moveForwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
         try {
-            HashMap newPosition = playerService.moveForward(playerNumber);
-            if (newPosition !=null )
-                return new ResponseEntity(newPosition, HttpStatus.OK);
+            Integer status = playerService.moveForward(gameId ,playerId);
+            if (status == 1)
+                return new ResponseEntity("MOVED ONE STEP FORWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
         }
@@ -31,12 +31,12 @@ public class PlayerController {
         }
     }
 
-    @GetMapping("/backward/{playerNumber}")
-    ResponseEntity moveBackwardController(@PathVariable int playerNumber){
+    @GetMapping("/backward/{gameId}/{playerId}")
+    ResponseEntity moveBackwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
         try {
-            HashMap newPosition = playerService.moveBackward(1);
-            if (newPosition !=null )
-                return new ResponseEntity(newPosition, HttpStatus.OK);
+            Integer newPosition = playerService.moveBackward(gameId ,playerId);
+            if (newPosition ==1 )
+                return new ResponseEntity("MOVED ONE STEP BACKWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
         }
@@ -46,12 +46,12 @@ public class PlayerController {
         }
     }
 
-    @GetMapping("/upward/{playerNumber}")
-    ResponseEntity moveUpwardController(@PathVariable int playerNumber){
+    @GetMapping("/upward/{gameId}/{playerId}")
+    ResponseEntity moveUpwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
         try {
-            HashMap newPosition = playerService.moveUpward(playerNumber);
-            if (newPosition !=null )
-                return new ResponseEntity(newPosition, HttpStatus.OK);
+            Integer newPosition = playerService.moveUpward(gameId ,playerId);
+            if (newPosition ==1  )
+                return new ResponseEntity("MOVED ONE STEP UPWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
         }
@@ -61,12 +61,12 @@ public class PlayerController {
         }
     }
 
-    @GetMapping("/downward/{playerNumber}")
-    ResponseEntity moveDownwardController(@PathVariable int playerNumber){
+    @GetMapping("/downward/{gameId}/{playerId}")
+    ResponseEntity moveDownwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
         try {
-            HashMap newPosition = playerService.moveDownward(playerNumber);
-            if (newPosition !=null )
-                return new ResponseEntity(newPosition, HttpStatus.OK);
+            Integer newPosition = playerService.moveDownward(gameId ,playerId);
+            if (newPosition ==1 )
+                return new ResponseEntity("MOVED ONE STEP DOWNWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
         }
@@ -76,10 +76,10 @@ public class PlayerController {
         }
     }
 
-    @GetMapping("fire/{playerNumber}")
-    ResponseEntity fireWeaponController(@RequestBody FireDto fireDto ,@PathVariable int playerNumber)  {
+    @PostMapping("fire/{gameId}/{playerId}")
+    ResponseEntity fireWeaponController(@RequestBody FireDto fireDto ,@PathVariable Long gameId ,@PathVariable Long playerId)  {
         try{
-            int status = playerService.fireWeapon(fireDto , playerNumber);
+            int status = playerService.fireWeapon(fireDto , gameId,playerId);
             if(status == 1)
                 return new ResponseEntity("BULLET HIT !",HttpStatus.OK);
             else if(status == 22)

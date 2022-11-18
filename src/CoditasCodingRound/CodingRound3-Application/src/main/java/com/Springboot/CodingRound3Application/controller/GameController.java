@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/game")
 public class GameController {
-
     @Autowired
     GameService gameService ;
 
@@ -44,6 +43,20 @@ public class GameController {
                 return new ResponseEntity("PLAYER 2 NOT FOUND !" ,HttpStatus.NOT_FOUND);
             else
                 return new ResponseEntity("GAME NOT CREATED ! SOMETHING WENT WRONG !" ,HttpStatus.NOT_ACCEPTABLE);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/start/{gameId}")
+    ResponseEntity startGameController(@PathVariable Long gameId){
+        try{
+            if(gameService.startGame(gameId))
+                return new ResponseEntity("GAME STARTED !" ,HttpStatus.OK);
+            else
+                return new ResponseEntity("GAME NOT FOUND !",HttpStatus.NOT_FOUND);
         }
         catch (Exception e){
             e.printStackTrace();
