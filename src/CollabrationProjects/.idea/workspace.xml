@@ -13,17 +13,33 @@
       <change afterPath="$PROJECT_DIR$/BookMyEventApplication/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BookMyEventApplication/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/BookMyEventApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/AdminEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/BookingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/EventCategoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/EventEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/EventOrganizerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/java/com/bookMyEvent/BookMyEventApplication/entities/UserEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BookMyEventApplication/src/test/java/com/bookMyEvent/BookMyEventApplication/BookMyEventApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/JpaReposistory/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/JpaReposistory/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/JpaReposistory/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/SpringBootHibernateJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/SpringBootHibernateJpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/entities/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/entities/Passport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/entities/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/entities/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/java/com/jpa/hibernate/SpringBootHibernateJPA/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PIP-Codes/SpringBoot-Hibernate-JPA-Codes/SpringBoot-Hibernate-JPA/src/main/resources/data.sql" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/config/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/exception/IncorrectPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/model/request/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/model/request/SignupDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../REST-api/practiceApplication/src/main/java/com/Practice/practiceApplication/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/config/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/config/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PIP-Codes/Day15-15-Nov-2022/Game/src/main/java/com/coditas/Game/controller/PlayerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,5 @@
-package com.coditas.Game.config;
+package com.Practice.practiceApplication.config;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,4 +10,4 @@ public class ModelMapperConfig {
     public ModelMapper getModelMapper(){
         return new ModelMapper();
     }
-} 
+}

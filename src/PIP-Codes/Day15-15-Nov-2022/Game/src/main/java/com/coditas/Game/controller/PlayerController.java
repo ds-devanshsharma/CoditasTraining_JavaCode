@@ -18,67 +18,43 @@ public class PlayerController {
 
     @GetMapping("/forward/{gameId}/{playerId}")
     ResponseEntity moveForwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
-        try {
             Integer status = playerService.moveForward(gameId ,playerId);
             if (status == 1)
                 return new ResponseEntity("MOVED ONE STEP FORWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @GetMapping("/backward/{gameId}/{playerId}")
     ResponseEntity moveBackwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
-        try {
             Integer newPosition = playerService.moveBackward(gameId ,playerId);
             if (newPosition ==1 )
                 return new ResponseEntity("MOVED ONE STEP BACKWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @GetMapping("/upward/{gameId}/{playerId}")
     ResponseEntity moveUpwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
-        try {
             Integer newPosition = playerService.moveUpward(gameId ,playerId);
             if (newPosition ==1  )
                 return new ResponseEntity("MOVED ONE STEP UPWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @GetMapping("/downward/{gameId}/{playerId}")
     ResponseEntity moveDownwardController(@PathVariable Long gameId ,@PathVariable Long playerId){
-        try {
             Integer newPosition = playerService.moveDownward(gameId ,playerId);
             if (newPosition ==1 )
                 return new ResponseEntity("MOVED ONE STEP DOWNWARD !", HttpStatus.OK);
             else
                 return new ResponseEntity("POSITION OVERLAPPED !" ,HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+
     }
 
     @PostMapping("fire/{gameId}/{playerId}")
     ResponseEntity fireWeaponController(@RequestBody FireDto fireDto ,@PathVariable Long gameId ,@PathVariable Long playerId)  {
-        try{
             int status = playerService.fireWeapon(fireDto , gameId,playerId);
             if(status == 1)
                 return new ResponseEntity("BULLET HIT !",HttpStatus.OK);
@@ -89,10 +65,6 @@ public class PlayerController {
             else
                 return new ResponseEntity("BULLET MISSED !" ,HttpStatus.NOT_ACCEPTABLE);
         }
-        catch (Exception e ){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
-}
+

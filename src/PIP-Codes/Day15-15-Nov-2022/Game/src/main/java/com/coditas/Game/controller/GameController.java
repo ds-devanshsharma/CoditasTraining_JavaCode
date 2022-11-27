@@ -22,45 +22,28 @@ public class GameController{
 
     @PostMapping("/createGame")
     ResponseEntity createGameController(@RequestBody CreateGameDto createGameDto){
-        try{
             Game gameCreated  = gameService.createGame(createGameDto);
             if(gameCreated != null)
                 return new ResponseEntity("GAME CREATED !" ,HttpStatus.CREATED);
             else
                 return new ResponseEntity("GAME NOT CREATED !",HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @PostMapping("/registerPlayer")
     ResponseEntity registerPlayerController(@RequestBody AddPlayerDto addPlayer){
-        try{
             Player addedPlayer = gameService.registerPlayer(addPlayer);
             if(addedPlayer != null)
                 return new ResponseEntity(addedPlayer , HttpStatus.CREATED);
             else
                 return new ResponseEntity("PLAYER NOT CREATED !",HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e ){
-            e.printStackTrace();
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @PostMapping("/startGame")
     ResponseEntity startGameController(@RequestBody StartGameDto startGameDto){
-        try{
             String status = gameService.startGame(startGameDto);
             if(status == "Yes")
                 return new ResponseEntity("GAME STARTED !" ,HttpStatus.CREATED);
             else
                 return new ResponseEntity("GAME NOT STARTED !" ,HttpStatus.NOT_ACCEPTABLE);
-        }
-        catch (Exception e ){
-            return new ResponseEntity(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 }
